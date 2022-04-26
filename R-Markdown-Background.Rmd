@@ -1,0 +1,60 @@
+---
+**Maxwell Creek Watershed - Hydrology**
+
+The Maxwell Creek watershed serves as an important ecological feature on Mt. Maxwell which has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island, BC. Maxwell Lake provides good quality drinking water to Salt Spring Island, however, the water quality is currently threatened due to nutrient loading from the surrounding watershed. The hydrology of Maxwell Creek watershed has been altered and degraded from its historical state, primarily due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) was undertaken to create stream channelization to Maxwell Lake. Alterations have been made to the natural stream flow and drainage has occurred from the ephemeral wetlands along the watershed. Streambank erosion is also present along Rippon creek, which connects through the watershed, caused by the ditching and channelization.
+
+- intro the three drainage basins (expand later on?) and their specific management issues → mapping to show differences
+
+**Fire history**
+
+The Maxwell Creek watershed resides within the Coastal douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on \&gt;100 year return cycles. Fire data by iMapBC indicates wildfire occurrences near Maxwell Lake through the years of 1952,1956, 1959, 1982, 1987, 1989, 1995, and as recent as 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity.
+
+**Land-use History**
+
+Historically, Maxwell Lake and its surrounding area was left relatively untouched until 1912 when Maxwell Road was constructed. Texada Land Corporation owned significant land in the Maxwell Lake watershed area, apart from 67 acres of land southeast of the lake, which was owned by a private family. Several areas were thinned and periodically logged in the mid-1900&#39;s, administered by Texada Land Corporation. Thinning was conducted by the feller-buncher method.The first partial logging of the area occurred for railway ties in 1918 and 1952, in stands nearest the road.
+
+In 1929, a homestead property was built on the land by the Carter family. Cattle pasturing was undertaken in the back field of this property in the 1970&#39;s, and agricultural modifications of the wetland areas are evident today due to substantial ditching and diversion of the natural watercourses along Rippon Creek. The Carter property was eventually taken over by Texada.
+
+In the early 2000&#39;s, two parcels of watershed land were purchased by North Salt Spring Water District (NSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
+
+**Jurisdictional Boundaries**
+
+A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal-douglas fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
+
+\*add Greg&#39;s property? Other areas missing?
+
+**Management Concerns**
+
+Potential management concerns regarding the Maxwell Creek watershed may occur because negotiations are required to be made between the landowners and conservancy covenant holders. The covenant holders have laid out management goals to protect the land, water quality and vegetation at the Maxwell Creek watershed, to be facilitated by landowners and periodic monitoring on the covenant holders end. Despite these measures, the process of maintaining a covenant area can be rigorous and costly, requiring yearly monitoring to ensure agreement terms are met. Potential setbacks for outsider groups are also of concern, particularly, when looking to propose management activities within covenant jurisdictional boundaries.
+
+Literature Cited:
+
+Biebighauser, Thomas. (2014). _Dry Lake Wetland and Stream Restoration Project_. Salt Spring Island Conservancy, Salt Spring Island, BC.title:
+"R-Markdown-Background"
+output: word_document
+date: '2022-04-26'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
