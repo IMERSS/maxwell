@@ -1,4 +1,10 @@
 ---
+title: Maxwell Creek Watershed Restoration Project
+author: Angeline Emmott, Andrew Simon, Antranig Basman
+date: May 3, 2022
+output: html_document
+---
+
 **Maxwell Creek Watershed - Hydrology**
 
 The Maxwell Creek watershed serves as an important ecological feature on Mt. Maxwell which has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island, BC. Maxwell Lake provides good quality drinking water to Salt Spring Island, however, the water quality is currently threatened due to nutrient loading from the surrounding watershed. The hydrology of Maxwell Creek watershed has been altered and degraded from its historical state, primarily due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) was undertaken to create stream channelization to Maxwell Lake. Alterations have been made to the natural stream flow and drainage has occurred from the ephemeral wetlands along the watershed. Streambank erosion is also present along Rippon creek, which connects through the watershed, caused by the ditching and channelization.
