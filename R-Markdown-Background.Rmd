@@ -36,10 +36,7 @@ Potential management concerns regarding the Maxwell Creek watershed may occur be
 Literature Cited:
 
 Biebighauser, Thomas. (2014). _Dry Lake Wetland and Stream Restoration Project_. Salt Spring Island Conservancy, Salt Spring Island, BC.title:
-"R-Markdown-Background"
-output: word_document
-date: '2022-04-26'
----
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
