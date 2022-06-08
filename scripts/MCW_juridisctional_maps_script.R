@@ -4,16 +4,16 @@
 #Layer 1: island coastline
 library(sf)
 library(ggplot2)
-islcoast <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/Island")
+islcoast <- st_read("spatial_data/vectors/Shp_files/Island")
 names(islcoast) #use "area" attribute
 
 #Layer 2: watersheds
-watersheds <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/Watershed_CRD")
+watersheds <- st_read("spatial_data/vectors/Shp_files/Watershed_CRD")
 plot(watersheds)
 names(watersheds)
 
 #Layer 3: CAD
-CAD <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/MXCK_CAD")
+CAD <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD")
 names(CAD) # use "LAND_DISTR" attribute to show parcels of land
 Jurisdictions <-CAD$LAND_DISTR
 
@@ -22,10 +22,10 @@ ggplot() +
   coord_sf()
 
 #Layer 4: MCW
-MCW <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/MCW")
+MCW <- st_read("spatial_data/vectors/Shp_files/MCW")
 
 #Layer 5: Protected areas clipped to MCW
-PA_MCW <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/IT_protected_areas_clipped")
+PA_MCW <- st_read("spatial_data/vectors/Shp_files/IT_protected_areas_clipped")
 names(PA_MCW) #use "DISTRIB" attribute to show private vs public landownership
 
 ggplot() + 
@@ -33,7 +33,7 @@ ggplot() +
   coord_sf()
 
 #Layer 6: Protected Areas (SSI)
-PA <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/IT_protected_areas_2022-05")
+PA <- st_read("spatial_data/vectors/Shp_files/IT_protected_areas_2022-05")
 names(PA) # use "DISTRIB" attribute to show private vs public land-ownership
 
 ggplot() + 
@@ -41,13 +41,13 @@ ggplot() +
   coord_sf()
 
 #Layer 7: Roads
-roads <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/DataBC_roads")
+roads <- st_read("spatial_data/vectors/Shp_files/DataBC_roads")
 
 #Layer 8: waterbodies 
-waterbodies <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/RAR_water_bodies")
+waterbodies <- st_read("spatial_data/vectors/Shp_files/RAR_water_bodies")
 
 #Layer 9: watercourses
-watercourses <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/RAR_water_courses")
+watercourses <- st_read("spatial_data/vectors/Shp_files/RAR_water_courses")
 
 #Mapping ggplot: 
 ggplot() + 
@@ -66,7 +66,7 @@ ggplot() +
 #Layers: islcoast, watersheds, CAD, CAD_MCW, roads, waterbodies, watercourses
 
 #Layer 10: CAD_MCW
-CAD_MCW <- st_read("/Users/angeline.emmott/Documents/GitHub/maxwell-rstudio/spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
+CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
 names(CAD_MCW) #use "LABEL" attribute to show landowner jurisdictions
 
 ggplot() + 
