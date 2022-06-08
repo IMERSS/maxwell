@@ -15,6 +15,7 @@ The Maxwell Creek watershed serves as an important ecological feature on Mt. Max
 ```{r, echo=FALSE}
 
 library(sf)
+library(ggplot2)
 
 mxcw = st_read("spatial_data/vectors/MCW.shp")
 
@@ -24,7 +25,7 @@ plot(mxcw)
 
 **Fire history**
 
-The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on >100 year return cycles. Fire data by iMapBC indicates wildfire occurrences near Maxwell Lake through the years of 1952,1956, 1959, 1982, 1987, 1989, 1995, and as recent as 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity.
+The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on >100 year return cycles. Fire data by iMapBC indicates wildfire occurrences near Maxwell Lake through the years of 1952, 1956, 1959, 1982, 1987, 1989, 1995, and as recent as 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity.
 
 **Land-use History**
 
@@ -36,9 +37,15 @@ In the early 2000&#39;s, two parcels of watershed land were purchased by North S
 
 **Jurisdictional Boundaries**
 
-A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal-douglas fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
+A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
 
 \*add Greg&#39;s property? Other areas missing?
+
+```{r, echo=FALSE}
+
+source("scripts/MCW_juridisctional_maps_script.R")
+
+```
 
 **Management Concerns**
 
