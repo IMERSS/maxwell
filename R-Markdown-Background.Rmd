@@ -3,6 +3,8 @@ title: Maxwell Creek Watershed Restoration Project
 author: Angeline Emmott, Andrew Simon, Antranig Basman
 date: May 3, 2022
 output: html_document
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
 ---
 
 
