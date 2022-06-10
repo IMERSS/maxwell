@@ -76,12 +76,12 @@ ggplot() +
 #Mapping ggplot:
 ggplot() +
   geom_sf(data = islcoast, color = "black") +
-  geom_sf(data = watersheds, color = "royalblue3") +
+  geom_sf(data = watersheds, color = "blue2") +
+  geom_sf(data = waterbodies, fill = "dodgerblue2") +
+  geom_sf(data = watercourses, fill = "dodgerblue3") +
+  geom_sf(data = MCW, color = "grey1", fill ="royalblue3") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
-  geom_sf(data = MCW, color = "grey2", fill ="blue1") +
   geom_sf(data = CAD_MCW, mapping = aes(fill = LABEL)) +
   geom_sf(data = roads, color = "grey") +
-  geom_sf(data = waterbodies, fill = "cyan") +
-  geom_sf(data = watercourses, fill = "dodgerblue4") +
   coord_sf()
   
