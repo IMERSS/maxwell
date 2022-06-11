@@ -50,14 +50,15 @@ waterbodies <- st_read("spatial_data/vectors/Shp_files/RAR_water_bodies")
 watercourses <- st_read("spatial_data/vectors/Shp_files/RAR_water_courses")
 
 #Mapping ggplot: 
+
 ggplot() + 
   geom_sf(data = islcoast, color = "black") +
-  geom_sf(data = watersheds, color = "royalblue3") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
-  geom_sf(data = MCW, color = "grey2", fill = "blue1") +
   geom_sf(data = PA_MCW, mapping = aes(fill = DISTRIB)) +
   geom_sf(data = PA, mapping = aes(fill = TYPE_1)) +
   geom_sf(data = roads, color = "grey") +
+  geom_sf(data = MCW, color = "black", fill = NA) +
+  geom_sf(data = watersheds, color = "royalblue3", fill = NA) +
   geom_sf(data = waterbodies, fill = "cyan") +
   geom_sf(data = watercourses, fill = "dodgerblue4") +
   coord_sf()
@@ -76,12 +77,27 @@ ggplot() +
 #Mapping ggplot:
 ggplot() +
   geom_sf(data = islcoast, color = "black") +
-  geom_sf(data = watersheds, color = "blue2") +
-  geom_sf(data = waterbodies, fill = "dodgerblue2") +
-  geom_sf(data = watercourses, fill = "dodgerblue3") +
   geom_sf(data = MCW, color = "grey1", fill ="royalblue3") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
   geom_sf(data = CAD_MCW, mapping = aes(fill = LABEL)) +
   geom_sf(data = roads, color = "grey") +
+  geom_sf(data = watersheds, color = "blue2", fill = NA) +
+  geom_sf(data = waterbodies, fill = "dodgerblue2") +
+  geom_sf(data = watercourses, fill = "dodgerblue3") +
   coord_sf()
+
+#Mapping ggplot with spatial extent restricted to MXCW:
+#CAD values = xmin: 458858.3 ymin: 5406257 xmax: 463151.3 ymax: 5411194
+
+ggplot() +
+  geom_sf(data = islcoast, color = "black") +
+  geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
+  geom_sf(data = CAD_MCW, mapping = aes(fill = LABEL)) +
+  geom_sf(data = roads, color = "grey") +
+  geom_sf(data = MCW, color = "black", fill = NA) +
+  geom_sf(data = watersheds, color = "blue2", fill = NA) +
+  geom_sf(data = waterbodies, fill = "dodgerblue1") +
+  geom_sf(data = watercourses, fill = "royalblue3") +
+  coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
+  ggtitle("Jurisdictional Reference Map 2")
   
