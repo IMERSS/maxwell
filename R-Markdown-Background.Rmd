@@ -40,11 +40,10 @@ In the early 2000's, two parcels of watershed land were purchased by North Salt 
 
 A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
 
-#Adding juridictional boundary maps
-
-```{r, echo=FALSE, fig.height=12, fig.width=12}
-library(sf)
-library(ggplot2)
+##Adding juridictional boundary maps
+#Map1
+```{r, echo= FALSE, fig.height=12, fig.width=12}
+source("scripts/Jurisdictional_reference_map_1_script.R")
 ggplot() + 
   geom_sf(data = islcoast, color = "black") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
@@ -57,7 +56,10 @@ ggplot() +
   geom_sf(data = watercourses, fill = "dodgerblue4") +
   coord_sf() +
   ggtitle("Jurisdictional Reference Map 1")
-
+```
+#Map2
+```{r, echo= FALSE, fig.height=12, fig.width=12}
+source("scripts/Jurisdictional_reference_map_2_script.R")
 ggplot() +
   geom_sf(data = islcoast, color = "black") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
@@ -72,10 +74,6 @@ ggplot() +
 ```
 
 \*add Greg's property? Other areas missing?
-
-```{r, echo=FALSE}
-source("scripts/MCW_juridisctional_maps_script.R")
-```
 
 **Management Concerns**
 
