@@ -11,6 +11,9 @@ MCW <- st_read("spatial_data/vectors/Shp_files/MCW")
 #Layer #3: historic fires
 h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires")
 
+#Layer 4: CAD_MCW
+CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
+
 ##Mapping based on fire year: 
 #changing FIRE_YEAR numeric attribute to character:
 h_fires$FIRE_YEAR <- as.character(h_fires$FIRE_YEAR)
@@ -24,4 +27,3 @@ ggplot() +
   geom_sf(data = CAD_MCW$geometry, fill = "NA") +
   coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
   ggtitle("Fire History Reference Map")
-
