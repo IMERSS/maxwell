@@ -22,8 +22,8 @@ h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires")
 
 ggplot() +
   geom_sf(data = CAD_MCW) +
-  geom_sf(data = PA_MCW, color ="black", fill = "NA") +
-  geom_sf(data = h_fires) +
+  geom_sf(data = PA_MCW, mapping = aes(fill = TYPE_2), color ="black", fill = "NA") +
+  geom_sf(data = h_fires, mapping = aes(fill = FIRE_YEAR)) +
   geom_sf(data = Lroads, fill = "green4", color = "green4") +
   geom_sf(data = roads) +
   coord_sf(xlim = c(458938.9, 462136.9), ylim = c(5406261, 5409918)) + 
