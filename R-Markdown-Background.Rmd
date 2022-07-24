@@ -61,6 +61,21 @@ In 1929, a homestead property was built on the land by the Carter family. Cattle
 
 In the early 2000's, two parcels of watershed land were purchased by North Salt Spring Water District (NSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
 
+```{r, echo=FALSE}
+library(dplyr)
+source("scripts/MCW_land_use_map_script.R")
+
+ggplot() +
+  geom_sf(data = CAD_MCW) +
+  geom_sf(data = PA_MCW, color ="black", fill = "NA") +
+  geom_sf(data = h_fires, color ="grey2", fill = "red1") +
+  geom_sf(data = Trails, color = "green4") +
+  geom_sf(data = Roads, color = "orange1") +
+  geom_point(aes(x = NA, y = NA, color ="Legend")) + 
+  scale_color_manual(name = "Legend", breaks =c("Trails", "Logging Roads", "Historic fires"), values = c("Trails" = "green4", "Logging Roads" = "orange1", "Historic fires" = "red1")) +
+  coord_sf(xlim = c(458938.9, 462136.9), ylim = c(5406261, 5409918)) + 
+  ggtitle("Land-use History Reference Map")
+```
 **Jurisdictional Boundaries**
 
 A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
