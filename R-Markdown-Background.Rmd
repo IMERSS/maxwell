@@ -38,9 +38,10 @@ source("scripts/MCW_fire_history_map_script.R")
 ggplot() +
   geom_sf(data = islcoast, color ="black", fill = "beige") +
   geom_sf(data = h_fires, mapping = aes(fill = FIRE_YEAR)) +
-  geom_sf_text(data = h_fires, aes(label = FIRE_YEAR), check_overlap = TRUE) + 
   geom_sf(data = MCW, color = "royalblue4", fill = "NA") +
   geom_sf(data = CAD_MCW$geometry, fill = "NA") +
+  geom_sf_text(data = h_fires, aes(label = FIRE_YEAR), check_overlap = TRUE) +
+  theme(legend.position = "none") +
   coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
   ggtitle("Fire History Reference Map")
 ```
