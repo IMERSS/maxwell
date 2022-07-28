@@ -26,7 +26,7 @@ nrow(Roads)
 #Layer 4: Historic fires
 h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires")
 
-ggplot() +
+p <- ggplot() +
   geom_sf(data = CAD_MCW) +
   geom_sf(data = PA_MCW, color ="black", fill = "NA") +
   geom_sf(data = h_fires, color ="grey2", fill = "red1") +
@@ -36,3 +36,5 @@ ggplot() +
   scale_color_manual(name = "Legend", breaks =c("Trails", "Logging Roads", "Historic fires"), values = c("Trails" = "green4", "Logging Roads" = "orange1", "Historic fires" = "red1")) +
   coord_sf(xlim = c(458938.9, 462136.9), ylim = c(5406261, 5409918)) + 
   ggtitle("Land-use History Reference Map")
+
+print(p)

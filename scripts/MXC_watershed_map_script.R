@@ -22,7 +22,7 @@ watersheds <- st_read("spatial_data/vectors/Shp_files/Watershed_CRD")
 
 #Mapping using ggplot2:
 
-ggplot() +
+p <- ggplot() +
   geom_sf(data = islcoast, color ="black", fill = "beige") +
   geom_sf(data = MCW, color = "black", fill = NA) +
   geom_sf(data = CAD_MCW, fill = NA) +
@@ -31,3 +31,5 @@ ggplot() +
   geom_sf(data = watercourses, color = "royalblue4", fill = "royalblue4") +
   coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
   ggtitle("Maxwell Creek Watershed Map")
+
+print(p)

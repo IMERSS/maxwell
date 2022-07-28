@@ -1,52 +1,36 @@
 ---
 title: Maxwell Creek Watershed Restoration Project
 author: Angeline Emmott, Andrew Simon, Antranig Basman
-date: May 3, 2022
+date: July 28th, 2022
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
 ---
 
-**Maxwell Creek Watershed - Hydrology**
+## Maxwell Creek Watershed - Hydrology
 
 The Maxwell Creek watershed serves as an important ecological feature on Mt. Maxwell which has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island, BC. Maxwell Lake provides good quality drinking water to Salt Spring Island, however, the water quality is currently threatened due to nutrient loading from the surrounding watershed. The hydrology of Maxwell Creek watershed has been altered and degraded from its historical state, primarily due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) was undertaken to create stream channelization to Maxwell Lake. Alterations have been made to the natural stream flow and drainage has occurred from the ephemeral wetlands along the watershed. Streambank erosion is also present along Rippon creek, which connects through the watershed, caused by the ditching and channelization.
 
 -   intro the three drainage basins (expand later on?) and their specific management issues → mapping to show differences
 
-```{r, echo=FALSE}
-library(sf)
-library(ggplot2)
+<!-- Note that all three of these options are required in order to suppress spurious R output
+ from the resulting markdown. echo suppresses actual R commands, message suppresses junk
+ from standard R builtins, and results suppresses output from st_read which just dumps
+ junk to its output -->
+```{r, echo=FALSE, message=FALSE, results='hide'}
 source("scripts/MXC_watershed_map_script.R")
-ggplot() +
-  geom_sf(data = islcoast, color ="black", fill = "beige") +
-  geom_sf(data = MCW, color = "black", fill = NA) +
-  geom_sf(data = CAD_MCW, fill = NA) +
-  geom_sf(data = watersheds, color = "blue2", fill = "NA") +
-  geom_sf(data = waterbodies, color = "dodgerblue1", fill = "dodgerblue1") +
-  geom_sf(data = watercourses, color = "royalblue4", fill = "royalblue4") +
-  coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
-  ggtitle("Maxwell Creek Watershed Map")
 ```
 
 
-**Fire history**
+## Fire history
 
 The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on \>100 year return cycles. Fire data by iMapBC indicates wildfire occurrences near Maxwell Lake through the years of 1952, 1956, 1959, 1982, 1987, 1989, 1995, and as recent as 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, results='hide'}
 source("scripts/MCW_fire_history_map_script.R")
-ggplot() +
-  geom_sf(data = islcoast, color ="black", fill = "beige") +
-  geom_sf(data = h_fires, mapping = aes(fill = FIRE_YEAR)) +
-  geom_sf(data = MCW, color = "royalblue4", fill = "NA") +
-  geom_sf(data = CAD_MCW$geometry, fill = "NA") +
-  geom_sf_text(data = h_fires, aes(label = FIRE_YEAR), check_overlap = TRUE) +
-  theme(legend.position = "none") +
-  coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
-  ggtitle("Fire History Reference Map")
 ```
 
-**Land-use History**
+## Land-use History
 
 Historically, Maxwell Lake and its surrounding area was left relatively untouched until 1912 when Maxwell Road was constructed. Texada Land Corporation owned significant land in the Maxwell Lake watershed area, apart from 67 acres of land southeast of the lake, which was owned by a private family. Several areas were thinned and periodically logged in the mid-1900's, administered by Texada Land Corporation. Thinning was conducted by the feller-buncher method. The first partial logging of the area occurred for railway ties in 1918 and 1952, in stands nearest the road.
 
@@ -54,61 +38,30 @@ In 1929, a homestead property was built on the land by the Carter family. Cattle
 
 In the early 2000's, two parcels of watershed land were purchased by North Salt Spring Water District (NSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, results='hide'}
 library(dplyr)
 source("scripts/MCW_land_use_map_script.R")
-
-ggplot() +
-  geom_sf(data = CAD_MCW) +
-  geom_sf(data = PA_MCW, color ="black", fill = "NA") +
-  geom_sf(data = h_fires, color ="grey2", fill = "red1") +
-  geom_sf(data = Trails, color = "green4") +
-  geom_sf(data = Roads, color = "orange1") +
-  geom_point(aes(x = NA, y = NA, color ="Legend")) + 
-  scale_color_manual(name = "Legend", breaks =c("Trails", "Logging Roads", "Historic fires"), values = c("Trails" = "green4", "Logging Roads" = "orange1", "Historic fires" = "red1")) +
-  coord_sf(xlim = c(458938.9, 462136.9), ylim = c(5406261, 5409918)) + 
-  ggtitle("Land-use History Reference Map")
 ```
-**Jurisdictional Boundaries**
+
+## Jurisdictional Boundaries
 
 A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
 
-##Adding juridictional boundary maps
-#Map1
-```{r, echo= FALSE, fig.height=12, fig.width=12}
+### Map 1
+
+```{r, echo=FALSE, message=FALSE, results='hide', fig.height=12, fig.width=12}
 source("scripts/Jurisdictional_reference_map_1_script.R")
-ggplot() + 
-  geom_sf(data = islcoast, color = "black") +
-  geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
-  geom_sf(data = PA_MCW, mapping = aes(fill = DISTRIB)) +
-  geom_sf(data = PA, mapping = aes(fill = TYPE_1)) +
-  geom_sf(data = roads, color = "grey") +
-  geom_sf(data = MCW, color = "black", fill = NA) +
-  geom_sf(data = watersheds, color = "royalblue3", fill = NA) +
-  geom_sf(data = waterbodies, fill = "cyan") +
-  geom_sf(data = watercourses, fill = "dodgerblue4") +
-  coord_sf() +
-  ggtitle("Jurisdictional Reference Map 1")
 ```
-#Map2
-```{r, echo= FALSE, fig.height=12, fig.width=12}
+
+### Map 2
+
+```{r, echo=FALSE, message=FALSE, results='hide', fig.height=12, fig.width=12}
 source("scripts/Jurisdictional_reference_map_2_script.R")
-ggplot() +
-  geom_sf(data = islcoast, color = "black") +
-  geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
-  geom_sf(data = CAD_MCW, mapping = aes(fill = LABEL)) +
-  geom_sf(data = roads, color = "grey") +
-  geom_sf(data = MCW, color = "black", fill = NA) +
-  geom_sf(data = watersheds, color = "blue2", fill = NA) +
-  geom_sf(data = waterbodies, fill = "dodgerblue1") +
-  geom_sf(data = watercourses, fill = "royalblue3") +
-  coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
-  ggtitle("Jurisdictional Reference Map 2")
 ```
 
 \*add Greg's property? Other areas missing?
 
-**Management Concerns**
+## Management Concerns
 
 Potential management concerns regarding the Maxwell Creek watershed may occur because negotiations are required to be made between the landowners and conservancy covenant holders. The covenant holders have laid out management goals to protect the land, water quality and vegetation at the Maxwell Creek watershed, to be facilitated by landowners and periodic monitoring on the covenant holders end. Despite these measures, the process of maintaining a covenant area can be rigorous and costly, requiring yearly monitoring to ensure agreement terms are met. Potential setbacks for outsider groups are also of concern, particularly, when looking to propose management activities within covenant jurisdictional boundaries.
 
@@ -119,5 +72,3 @@ Biebighauser, Thomas. (2014). *Dry Lake Wetland and Stream Restoration Project*.
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-

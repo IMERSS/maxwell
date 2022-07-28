@@ -35,7 +35,7 @@ watercourses <- st_read("spatial_data/vectors/Shp_files/RAR_water_courses")
 
 #Mapping ggplot: 
 
-ggplot() + 
+p <- ggplot() + 
   geom_sf(data = islcoast, color = "black") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
   geom_sf(data = PA_MCW, mapping = aes(fill = DISTRIB)) +
@@ -48,3 +48,4 @@ ggplot() +
   coord_sf() +
   ggtitle("Jurisdictional Reference Map 1")
 
+print(p)

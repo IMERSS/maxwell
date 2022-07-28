@@ -39,7 +39,7 @@ names(CAD_MCW) #use "LABEL" attribute to show landowner jurisdictions
 
 #Mapping ggplot with spatial extent restricted to MXCW:
 #CAD values = xmin: 458858.3 ymin: 5406257 xmax: 463151.3 ymax: 5411194
-ggplot() +
+p <- ggplot() +
   geom_sf(data = islcoast, color = "black") +
   geom_sf(data = CAD, mapping = aes(fill = Jurisdictions)) +
   geom_sf(data = CAD_MCW, mapping = aes(fill = LABEL)) +
@@ -50,3 +50,5 @@ ggplot() +
   geom_sf(data = watercourses, fill = "royalblue3") +
   coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
   ggtitle("Jurisdictional Reference Map 2")
+
+print(p)

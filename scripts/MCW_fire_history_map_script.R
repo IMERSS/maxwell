@@ -19,7 +19,7 @@ CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
 h_fires$FIRE_YEAR <- as.character(h_fires$FIRE_YEAR)
 
 #Map clipped to MXCW:
-ggplot() +
+p <- ggplot() +
   geom_sf(data = islcoast, color ="black", fill = "beige") +
   geom_sf(data = h_fires, mapping = aes(fill = FIRE_YEAR)) +
   geom_sf(data = MCW, color = "royalblue4", fill = "NA") +
@@ -28,3 +28,5 @@ ggplot() +
   theme(legend.position = "none") +
   coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
   ggtitle("Fire History Reference Map")
+
+print(p)
