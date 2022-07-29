@@ -6,6 +6,11 @@ output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
 ---
+#INTRO
+```{r, echo=FALSE, message=FALSE, results='hide'}
+source("scripts/MCW_base_map_script.R")
+```
+
 
 ## Maxwell Creek Watershed - Hydrology
 
@@ -36,7 +41,7 @@ Historically, Maxwell Lake and its surrounding area was left relatively untouche
 
 In 1929, a homestead property was built on the land by the Carter family. Cattle pasturing was undertaken in the back field of this property in the 1970's, and agricultural modifications of the wetland areas are evident today due to substantial ditching and diversion of the natural watercourses along Rippon Creek. The Carter property was eventually taken over by Texada.
 
-In the early 2000's, two parcels of watershed land were purchased by North Salt Spring Water District (NSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
+In the early 2000's, two parcels of watershed land were purchased by North Salt Spring Water District (NSSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
 
 ```{r, echo=FALSE, message=FALSE, results='hide'}
 library(dplyr)
@@ -45,18 +50,10 @@ source("scripts/MCW_land_use_map_script.R")
 
 ## Jurisdictional Boundaries
 
-A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
-
-### Map 1
+A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
 
 ```{r, echo=FALSE, message=FALSE, results='hide', fig.height=12, fig.width=12}
-source("scripts/Jurisdictional_reference_map_1_script.R")
-```
-
-### Map 2
-
-```{r, echo=FALSE, message=FALSE, results='hide', fig.height=12, fig.width=12}
-source("scripts/Jurisdictional_reference_map_2_script.R")
+source("scripts/Jurisdictional_reference_map_script.R")
 ```
 
 \*add Greg's property? Other areas missing?
