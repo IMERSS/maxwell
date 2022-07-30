@@ -43,9 +43,12 @@ In 1929, a homestead property was built on the land by the Carter family. Cattle
 
 In the early 2000's, two parcels of watershed land were purchased by North Salt Spring Water District (NSSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
 
-```{r, echo=FALSE, message=FALSE, results='hide'}
-library(dplyr)
+```{r, echo=FALSE, message=FALSE}
 source("scripts/MCW_land_use_map_script.R")
+# Note that ONLY this strategy is effective - it is impossible to use print() or a direct value within the
+# script, and use of results="hide" will hide the map. We must directly execute the map value at top level
+# like this in order to output to the markup
+landUseMap
 ```
 
 ## Jurisdictional Boundaries

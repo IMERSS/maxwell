@@ -1,19 +1,20 @@
-##MCW land use history map:
 library(sf)
-library(ggplot2)
+library(leaflet)
+library(rgdal)
 library(dplyr)
 
-#Layer 1: island coastline
-islcoast <- st_read("spatial_data/vectors/Shp_files/Island")
+lat_lon <- function (data) {
+  return(st_transform(data, CRS("+proj=longlat +datum=WGS84")))
+}
 
 #Layer 2: CAD_MCW
-CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
+CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW", quiet=TRUE)
 
 #Layer 2: Protected Areas (clipped to MCW)
-PA_MCW <- st_read("spatial_data/vectors/Shp_files/IT_protected_areas_clipped")
+PA_MCW <- st_read("spatial_data/vectors/Shp_files/IT_protected_areas_clipped", quiet=TRUE)
 
 #Layer 3: Logging roads and trails
-Lroads <- st_read("spatial_data/vectors/Shp_files/Logging_roads_trails")
+Lroads <- st_read("spatial_data/vectors/Shp_files/Logging_roads_trails", quiet=TRUE)
 
 Trails <- Lroads %>%
   filter(Lroads$Type == "trail")
@@ -24,17 +25,17 @@ Roads <- Lroads %>%
 nrow(Roads)
 
 #Layer 4: Historic fires
-h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires")
+h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires", quiet=TRUE)
 
-p <- ggplot() +
-  geom_sf(data = CAD_MCW) +
-  geom_sf(data = PA_MCW, color ="black", fill = "NA") +
-  geom_sf(data = h_fires, color ="grey2", fill = "red1") +
-  geom_sf(data = Trails, color = "green4") +
-  geom_sf(data = Roads, color = "orange1") +
-  geom_point(aes(x = NA, y = NA, color ="Legend")) + 
-  scale_color_manual(name = "Legend", breaks =c("Trails", "Logging Roads", "Historic fires"), values = c("Trails" = "green4", "Logging Roads" = "orange1", "Historic fires" = "red1")) +
-  coord_sf(xlim = c(458938.9, 462136.9), ylim = c(5406261, 5409918)) + 
-  ggtitle("Land-use History Reference Map")
+landUseMap <- leaflet() %>%
+    addTiles(options = providerTileOptions(opacity = 0.5)) %>%
+    addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 2, fillOpacity = 0) %>%
+    addPolygons(data = lat_lon(h_fires), color = "#050505", weight = 2, fillOpacity = 0.7, fillColor = "red") %>%
+    addPolylines(data = lat_lon(Trails), color = "green", weight = 4) %>%
+    addPolylines(data = lat_lon(Roads), color = "orange", weight = 4) %>%
+    fitBounds(-123.564, 48.802, -123.516, 48.855) %>%
+    addLegend(position="topright", labels = c("Trails", "Logging Roads", "Historic fires"), colors = c("green", "orange", "red"))
 
-print(p)
+#Note that this statement is only effective in standalone R
+print(landUseMap)
+
