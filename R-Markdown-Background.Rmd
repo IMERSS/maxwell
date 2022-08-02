@@ -1,14 +1,16 @@
 ---
 title: Maxwell Creek Watershed Restoration Project
 author: Angeline Emmott, Andrew Simon, Antranig Basman
-date: July 28th, 2022
+date: August 2nd, 2022
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
 ---
-#INTRO
-```{r, echo=FALSE, message=FALSE, results='hide'}
+## Introduction
+
+```{r, echo=FALSE, message=FALSE}
 source("scripts/MCW_base_map_script.R")
+baseMap
 ```
 
 
@@ -55,8 +57,9 @@ landUseMap
 
 A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
 
-```{r, echo=FALSE, message=FALSE, results='hide', fig.height=12, fig.width=12}
+```{r, echo=FALSE, message=FALSE}
 source("scripts/Jurisdictional_reference_map_script.R")
+jurisMap
 ```
 
 \*add Greg's property? Other areas missing?
