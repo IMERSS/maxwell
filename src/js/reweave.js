@@ -1,5 +1,8 @@
+/* eslint-env node */
+
+"use strict";
+
 var fs = require("fs-extra"),
-    path = require("path"),
     linkedom = require("linkedom");
 
 require("../../index.js");
@@ -43,7 +46,7 @@ var hideLeafletWidgets = function (container) {
 var removeImageMaps = function (container) {
     // Remove old image maps which haven't yet been converted - these stick out
     var images = container.querySelectorAll("img");
-    images.forEach(image => image.remove())
+    images.forEach(image => image.remove());
 };
 
 var reweaveFile = function (infile, outfile, options) {

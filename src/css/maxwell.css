@@ -59,4 +59,6 @@ h2 {
 .mxcw-activeSection {
     background-color: #eee;
     outline: 1px solid black;
+    transition-property: background-color, outline;
+    transition-duration: 400ms;
 }

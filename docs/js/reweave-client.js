@@ -31,9 +31,9 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
 var maxwell = {};
 
 maxwell.findLeafletWidgets = function () {
-    var widgets = document.querySelectorAll(".html-widget.leaflet");
+    var widgets = [...document.querySelectorAll(".html-widget.leaflet")];
     console.log("Found " + widgets.length + " widgets");
-    return Array.prototype.map.call(widgets, function (widget) {
+    return widgets.map(function (widget) {
         var id = widget.id;
         var dataNode = document.querySelector("[data-for=\"" + id + "\"");
         console.log("Got data node ", dataNode);
@@ -90,8 +90,21 @@ maxwell.findCall = function (calls, method) {
 };
 
 maxwell.addDocumentListeners = function (instance) {
-    instance.widgets.forEach(function (widget, i) {
-        widget.heading.addEventListener("click", () => instance.updateActiveGroup(i))
+    var widgets = instance.widgets;
+    widgets.forEach(function (widget, i) {
+        widget.heading.addEventListener("click", () => instance.updateActiveGroup(i));
+    });
+    var content = document.querySelector(".mxcw-content");
+    content.addEventListener("scroll", function () {
+        var scrollTop = content.scrollTop;
+        var offsets = widgets.map(widget => widget.section.offsetTop);
+        console.log("Got offets ", instance.offsets, " with scrollTop " + scrollTop);
+        var index = offsets.findIndex(offset => offset > (scrollTop - 200));
+        if (index === -1) {
+            index = widgets.length - 1;
+        }
+        console.log("Chosen index ", index);
+        instance.updateActiveGroup(index);
     });
 };
 
@@ -108,11 +121,10 @@ maxwell.registerListeners = function (instance) {
             }
         });
         instance.widgets.forEach(function (widget, i) {
-            var section = widget.heading.closest(".section");
             if (i === event.detail.activeGroup) {
-                section.classList.add("mxcw-activeSection");
+                widget.section.classList.add("mxcw-activeSection");
             } else {
-                section.classList.remove("mxcw-activeSection");
+                widget.section.classList.remove("mxcw-activeSection");
             }
         });
     });
@@ -126,9 +138,11 @@ class maxwell_Leaflet extends EventTarget {
         maxwell.registerListeners(this);
     }
     updateActiveGroup(activeGroup) {
-        this.dispatchEvent(new CustomEvent("updateActiveGroup", {
-            detail: { activeGroup: activeGroup }
-        }));
+        if (activeGroup !== this.activeGroup) {
+            this.dispatchEvent(new CustomEvent("updateActiveGroup", {
+                detail: { activeGroup: activeGroup }
+            }));
+        }
     }
 }
 
@@ -150,7 +164,7 @@ maxwell.instantiateLeaflet = function (selector) {
         map: map,
         widgets: widgets,
         panes: panes,
-        activeGroup: 0
+        activeGroup: null
     });
     maxwell.leafletInstance = instance;
     instance.updateActiveGroup(0);

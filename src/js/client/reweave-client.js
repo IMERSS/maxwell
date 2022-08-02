@@ -1,5 +1,7 @@
 "use strict";
 
+/* global L, HTMLWidgets */
+
 window.HTMLWidgets = window.HTMLWidgets || {};
 
 // Taken from https://github.com/ramnathv/htmlwidgets/blob/master/inst/www/htmlwidgets.js
@@ -7,8 +9,9 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
     var names = [];
     var length;
     for (var name in df) {
-        if (df.hasOwnProperty(name))
+        if (df.hasOwnProperty(name)) {
             names.push(name);
+        }
         if (typeof(df[name]) !== "object" || typeof(df[name].length) === "undefined") {
             throw new Error("All fields must be arrays");
         } else if (typeof(length) !== "undefined" && length !== df[name].length) {
@@ -26,14 +29,14 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
         results.push(item);
     }
     return results;
-  };
+};
 
 var maxwell = {};
 
 maxwell.findLeafletWidgets = function () {
-    var widgets = document.querySelectorAll(".html-widget.leaflet");
+    var widgets = [...document.querySelectorAll(".html-widget.leaflet")];
     console.log("Found " + widgets.length + " widgets");
-    return Array.prototype.map.call(widgets, function (widget) {
+    return widgets.map(function (widget) {
         var id = widget.id;
         var dataNode = document.querySelector("[data-for=\"" + id + "\"");
         console.log("Got data node ", dataNode);
@@ -90,8 +93,21 @@ maxwell.findCall = function (calls, method) {
 };
 
 maxwell.addDocumentListeners = function (instance) {
-    instance.widgets.forEach(function (widget, i) {
-        widget.heading.addEventListener("click", () => instance.updateActiveGroup(i))
+    var widgets = instance.widgets;
+    widgets.forEach(function (widget, i) {
+        widget.heading.addEventListener("click", () => instance.updateActiveGroup(i));
+    });
+    var content = document.querySelector(".mxcw-content");
+    content.addEventListener("scroll", function () {
+        var scrollTop = content.scrollTop;
+        var offsets = widgets.map(widget => widget.section.offsetTop);
+        console.log("Got offsets ", instance.offsets, " with scrollTop " + scrollTop);
+        var index = offsets.findIndex(offset => offset > (scrollTop - 200));
+        if (index === -1) {
+            index = widgets.length - 1;
+        }
+        console.log("Chosen index ", index);
+        instance.updateActiveGroup(index);
     });
 };
 
@@ -108,11 +124,10 @@ maxwell.registerListeners = function (instance) {
             }
         });
         instance.widgets.forEach(function (widget, i) {
-            var section = widget.heading.closest(".section");
             if (i === event.detail.activeGroup) {
-                section.classList.add("mxcw-activeSection");
+                widget.section.classList.add("mxcw-activeSection");
             } else {
-                section.classList.remove("mxcw-activeSection");
+                widget.section.classList.remove("mxcw-activeSection");
             }
         });
     });
@@ -126,9 +141,11 @@ class maxwell_Leaflet extends EventTarget {
         maxwell.registerListeners(this);
     }
     updateActiveGroup(activeGroup) {
-        this.dispatchEvent(new CustomEvent("updateActiveGroup", {
-            detail: { activeGroup: activeGroup }
-        }));
+        if (activeGroup !== this.activeGroup) {
+            this.dispatchEvent(new CustomEvent("updateActiveGroup", {
+                detail: { activeGroup: activeGroup }
+            }));
+        }
     }
 }
 
@@ -140,17 +157,17 @@ maxwell.instantiateLeaflet = function (selector) {
     var data0 = widgets[0].data.x;
     var bounds = data0.fitBounds;
     map.fitBounds([[bounds[0], bounds[1]], [bounds[2], bounds[3]]]);
-    
+
     var tiles = maxwell.findCall(data0.calls, "addTiles");
     L.tileLayer(tiles.args[0], tiles.args[3]).addTo(map);
-    
+
     var panes = widgets.map((widget, i) => maxwell.widgetToPane(map, widget.data.x.calls, i));
     var instance = new maxwell_Leaflet({
         container: node,
         map: map,
         widgets: widgets,
         panes: panes,
-        activeGroup: 0
+        activeGroup: null
     });
     maxwell.leafletInstance = instance;
     instance.updateActiveGroup(0);

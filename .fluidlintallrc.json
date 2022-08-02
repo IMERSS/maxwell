@@ -1,9 +1,9 @@
 {
     "sources": {
         "md": ["./*.md"],
-        "css": ["css/**/*.css"],
-        "js": ["js/**/*.js"],
-        "json": ["./*.json", "src/**/*.json"],
+        "css": ["src/css/**/*.css"],
+        "js": ["src/js/**/*.js"],
+        "json": ["./*.json", "src/**/*.json"]
     },
     "eslint": {
         "js": {

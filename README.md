@@ -1,6 +1,6 @@
 # Maxwell Creek Watershed Project Visualisations
 
-This project hosts code, assets and visualisations for the 
+This project hosts code, assets and visualisations for the
 [Maxwell Creek Watershed Project](https://transitionsaltspring.com/maxwell-creek-watershed-project/) which is being
 undertaken by [Transition Salt Spring](https://transitionsaltspring.com/).
 
