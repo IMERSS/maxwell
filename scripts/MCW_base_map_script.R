@@ -5,7 +5,7 @@ library(rgdal)
 library(dplyr)
 
 lat_lon <- function (data) {
-  return(st_transform(data, CRS("+proj=longlat +datum=WGS84")))
+  return(st_transform(data, "+proj=longlat +datum=WGS84"))
 }
 
 #Layer 1: island coastline
