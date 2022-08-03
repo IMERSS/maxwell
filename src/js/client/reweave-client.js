@@ -57,10 +57,17 @@ maxwell.leafletiseCoords = function (coords) {
     return coords.map(poly => poly.map(HTMLWidgets.dataframeToD3));
 };
 
-maxwell.scalarise = function (obj, member) {
-    if (Array.isArray(obj[member])) {
-        obj[member] = obj[member][0];
-    }
+// Undo bizarre "multiplexing" which is achieved by the HTMLWidgets "dataFrame" system
+maxwell.resolveVectorOptions = function (options, index) {
+    var entries = Object.entries(options).map(([key, val]) =>
+        [key, Array.isArray(val) ? val[index] : val]
+    );
+    return Object.fromEntries(entries);
+};
+
+maxwell.leafletPolyMethods = {
+    addPolygons: "polygon",
+    addPolylines: "polyline"
 };
 
 maxwell.widgetToPane = function (map, calls, index) {
@@ -74,14 +81,12 @@ maxwell.widgetToPane = function (map, calls, index) {
     calls.forEach(function (call) {
         var shapes = call.args[0],
             options = Object.assign({}, call.args[3], paneOptions);
-        maxwell.scalarise(options, "fillColor");
         // See https://github.com/rstudio/leaflet/blob/main/javascript/src/methods.js#L550
-        if (call.method === "addPolygons") {
-            shapes.forEach(shape =>
-                L.polygon(maxwell.leafletiseCoords(shape), options).addTo(group));
-        } else if (call.method === "addPolylines") {
-            shapes.forEach(shape =>
-                L.polyline(maxwell.leafletiseCoords(shape), options).addTo(group));
+        var leafletMethod = maxwell.leafletPolyMethods[call.method];
+        if (leafletMethod) {
+            shapes.forEach((shape, index) =>
+                L[leafletMethod](maxwell.leafletiseCoords(shape),
+                    maxwell.resolveVectorOptions(options, index)).addTo(group));
         }
     });
     return pane;

@@ -1,5 +1,7 @@
 "use strict";
 
+/* global L, HTMLWidgets */
+
 window.HTMLWidgets = window.HTMLWidgets || {};
 
 // Taken from https://github.com/ramnathv/htmlwidgets/blob/master/inst/www/htmlwidgets.js
@@ -7,8 +9,9 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
     var names = [];
     var length;
     for (var name in df) {
-        if (df.hasOwnProperty(name))
+        if (df.hasOwnProperty(name)) {
             names.push(name);
+        }
         if (typeof(df[name]) !== "object" || typeof(df[name].length) === "undefined") {
             throw new Error("All fields must be arrays");
         } else if (typeof(length) !== "undefined" && length !== df[name].length) {
@@ -26,7 +29,7 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
         results.push(item);
     }
     return results;
-  };
+};
 
 var maxwell = {};
 
@@ -54,10 +57,17 @@ maxwell.leafletiseCoords = function (coords) {
     return coords.map(poly => poly.map(HTMLWidgets.dataframeToD3));
 };
 
-maxwell.scalarise = function (obj, member) {
-    if (Array.isArray(obj[member])) {
-        obj[member] = obj[member][0];
-    }
+// Undo bizarre "multiplexing" which is achieved by the HTMLWidgets "dataFrame" system
+maxwell.resolveVectorOptions = function (options, index) {
+    var entries = Object.entries(options).map(([key, val]) =>
+        [key, Array.isArray(val) ? val[index] : val]
+    );
+    return Object.fromEntries(entries);
+};
+
+maxwell.leafletPolyMethods = {
+    addPolygons: "polygon",
+    addPolylines: "polyline"
 };
 
 maxwell.widgetToPane = function (map, calls, index) {
@@ -71,14 +81,12 @@ maxwell.widgetToPane = function (map, calls, index) {
     calls.forEach(function (call) {
         var shapes = call.args[0],
             options = Object.assign({}, call.args[3], paneOptions);
-        maxwell.scalarise(options, "fillColor");
         // See https://github.com/rstudio/leaflet/blob/main/javascript/src/methods.js#L550
-        if (call.method === "addPolygons") {
-            shapes.forEach(shape =>
-                L.polygon(maxwell.leafletiseCoords(shape), options).addTo(group));
-        } else if (call.method === "addPolylines") {
-            shapes.forEach(shape =>
-                L.polyline(maxwell.leafletiseCoords(shape), options).addTo(group));
+        var leafletMethod = maxwell.leafletPolyMethods[call.method];
+        if (leafletMethod) {
+            shapes.forEach((shape, index) =>
+                L[leafletMethod](maxwell.leafletiseCoords(shape),
+                    maxwell.resolveVectorOptions(options, index)).addTo(group));
         }
     });
     return pane;
@@ -98,7 +106,7 @@ maxwell.addDocumentListeners = function (instance) {
     content.addEventListener("scroll", function () {
         var scrollTop = content.scrollTop;
         var offsets = widgets.map(widget => widget.section.offsetTop);
-        console.log("Got offets ", instance.offsets, " with scrollTop " + scrollTop);
+        console.log("Got offsets ", instance.offsets, " with scrollTop " + scrollTop);
         var index = offsets.findIndex(offset => offset > (scrollTop - 200));
         if (index === -1) {
             index = widgets.length - 1;
@@ -154,10 +162,10 @@ maxwell.instantiateLeaflet = function (selector) {
     var data0 = widgets[0].data.x;
     var bounds = data0.fitBounds;
     map.fitBounds([[bounds[0], bounds[1]], [bounds[2], bounds[3]]]);
-    
+
     var tiles = maxwell.findCall(data0.calls, "addTiles");
     L.tileLayer(tiles.args[0], tiles.args[3]).addTo(map);
-    
+
     var panes = widgets.map((widget, i) => maxwell.widgetToPane(map, widget.data.x.calls, i));
     var instance = new maxwell_Leaflet({
         container: node,
