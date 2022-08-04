@@ -1,12 +1,14 @@
 ---
 title: Maxwell Creek Watershed Restoration Project
 author: Angeline Emmott, Andrew Simon, Antranig Basman
-date: August 2nd, 2022
+date: August 4, 2022
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
 ---
 ## Introduction
+
+Mount Maxwell, also known as Hwmet’utsum to the Hul’q’umi’num speaking peoples, is an important ecological feature of Salt Spring Island, BC. The mountain is the highest peak in the Gulf islands standing at 602 metres tall and comprises various unique ecosystems including second growth Coastal Douglas-fir forests, garry oak woodlands, and wetland habitat. Hwmet’utsum has gained ecological interest due to the unique history of logging, agriculture, and wildfire on the landscape. Specifically, the Maxwell Creek Watershed, extending over 296 acres of protected land, is the main area of interest. The Maxwell Creek Watershed project was initiated to understand and enhance the ecological integrity of the forests and wetland areas in this watershed through restoration and wildfire resilience. 
 
 ```{r, echo=FALSE, message=FALSE}
 source("scripts/MCW_base_map_script.R")
@@ -14,11 +16,9 @@ baseMap
 ```
 
 
-## Maxwell Creek Watershed - Hydrology
+## Hydrology
 
-The Maxwell Creek watershed serves as an important ecological feature on Mt. Maxwell which has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island, BC. Maxwell Lake provides good quality drinking water to Salt Spring Island, however, the water quality is currently threatened due to nutrient loading from the surrounding watershed. The hydrology of Maxwell Creek watershed has been altered and degraded from its historical state, primarily due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) was undertaken to create stream channelization to Maxwell Lake. Alterations have been made to the natural stream flow and drainage has occurred from the ephemeral wetlands along the watershed. Streambank erosion is also present along Rippon creek, which connects through the watershed, caused by the ditching and channelization.
-
--   intro the three drainage basins (expand later on?) and their specific management issues → mapping to show differences
+The hydrology of the Maxwell Creek watershed is extensive, consisting of several water bodies, creek systems, and wetland zones. Predominant features include: Maxwell Lake, Dry Lake, and the Rippon creek system which connects throughout the watershed. The Maxwell Creek watershed serves as an important feature of Hwmet’utsum, and has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island. In particular, Maxwell Lake provides good quality drinking water for the island, however, this resource is at risk of degradation caused by nutrient loading from the surrounding watershed and roadways. The hydrology of the watershed has also been altered and degraded from its historical state due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) occurred in the mid 1900’s to promote stream channelization to Maxwell Lake, impacting the natural stream flow of Rippon Creek. Channelization effects include the drainage of ephemeral wetlands in the watershed and streambank erosion along the creek bed. 
 
 <!-- Note that all three of these options are required in order to suppress spurious R output
  from the resulting markdown. echo suppresses actual R commands, message suppresses junk
@@ -31,7 +31,7 @@ source("scripts/MXC_watershed_map_script.R")
 
 ## Fire history
 
-The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on \>100 year return cycles. Fire data by iMapBC indicates wildfire occurrences near Maxwell Lake through the years of 1952, 1956, 1959, 1982, 1987, 1989, 1995, and as recent as 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity.
+The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on >100 year return cycles. Fire data indicates wildfire occurrences in the watershed throughout the 1930’s and 1940’s, and as recently as 2009. While in the surrounding areas, wildfires were recorded through the years of 1952, 1956, 1959, 1982, 1987, 1989, 1995, and 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity. 
 
 ```{r, echo=FALSE, message=FALSE, results='hide'}
 source("scripts/MCW_fire_history_map_script.R")
@@ -39,11 +39,10 @@ source("scripts/MCW_fire_history_map_script.R")
 
 ## Land-use History
 
-Historically, Maxwell Lake and its surrounding area was left relatively untouched until 1912 when Maxwell Road was constructed. Texada Land Corporation owned significant land in the Maxwell Lake watershed area, apart from 67 acres of land southeast of the lake, which was owned by a private family. Several areas were thinned and periodically logged in the mid-1900's, administered by Texada Land Corporation. Thinning was conducted by the feller-buncher method. The first partial logging of the area occurred for railway ties in 1918 and 1952, in stands nearest the road.
-
-In 1929, a homestead property was built on the land by the Carter family. Cattle pasturing was undertaken in the back field of this property in the 1970's, and agricultural modifications of the wetland areas are evident today due to substantial ditching and diversion of the natural watercourses along Rippon Creek. The Carter property was eventually taken over by Texada.
-
-In the early 2000's, two parcels of watershed land were purchased by North Salt Spring Water District (NSSWD) and covenant partners (Salt Spring Island Conservancy and the Land Conservancy of BC). NSSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders.
+The land-use history of Hwmet’utsum is complex, indicating it as both an ecologically and culturally important area. The Maxwell Creek watershed resides on traditional Quw’utsun territory of the Hul’q’umi’num speaking peoples, who are still stewards of the land to date. 
+Historically, Maxwell Lake and its surrounding area was left relatively untouched by settlers until 1912 when Maxwell Road was constructed. At this time, Texada Land Corporation owned significant land in the Maxwell Lake watershed area, apart from 67 acres of land southeast of the lake, which was owned by a private family. Several areas were thinned and periodically logged in the mid-1900’s, administered by Texada Land Corporation. Thinning was conducted by the feller-buncher method.The first partial logging of the area occurred for railway ties in 1918 and 1952, in stands nearest the road. 
+In 1929, a homestead property was built on the land by the Carter family. Cattle pasturing was undertaken in the back field of this property in the 1970’s, and agricultural modifications of the wetland areas are evident today due to substantial ditching and diversion of the natural watercourses along Rippon Creek. The Carter property was eventually taken over by Texada. 
+In the early 2000’s, two parcels of watershed land were purchased by the North Salt Spring Water District (NSSWD) and covenant partners (Salt Spring Island Conservancy, Islands Trust Conservancy and the Land Conservancy of BC). NSSWD first purchased 48 acres of primary watershed around the lake from Texada, and subsequently bought another 240 acres of secondary watershed with covenant holders. 
 
 ```{r, echo=FALSE, message=FALSE}
 source("scripts/MCW_land_use_map_script.R")
@@ -55,22 +54,16 @@ landUseMap
 
 ## Jurisdictional Boundaries
 
-A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSSWD and its associated covenant holders.The first lot (Lot 9) is 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake lakeshore and the surrounding hillside. NSSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with the covenant holders SSI Conservancy and The Land conservancy of BC. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest up to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Mount Maxwell. Residential land parcels also reside in the area, along with 4.7 km of road networks.
+A total of 297.8 acres of Maxwell watershed forest area is currently owned by NSSWD and its associated covenant holders.The first lot (Lot 9) consists of 50 acres of primary watershed property that includes the southeast corner of Maxwell Lake shore-front and the surrounding hillside. NSSWD announced purchase of the property in 2002. The second lot (Lot A) is 247.8 acres (100.3 ha) in size, registered with SSI Conservancy and The Land conservancy of BC covenant holders. The boundary extends northwest from the peak of Mt. Maxwell through a series of wetlands, ephemeral water courses, and Coastal Douglas-fir forest to Maxwell Road, east of Maxwell Lake. The area also includes Rippon and No name creeks. The remaining timber value in the Rippon creek watershed was eventually purchased by the conservancy and partners. The covenant was made as part of an ecological gift, established to protect the secondary watershed area on Hwmet’utsum. Residential land parcels also reside in the area, along with 4.7 km of road networks. Private landholders make up a significant portion of the area north of Maxwell Lake, including Foxglove farm, as well as on the southeast side of the watershed. 
 
 ```{r, echo=FALSE, message=FALSE}
 source("scripts/Jurisdictional_reference_map_script.R")
 jurisMap
 ```
 
-\*add Greg's property? Other areas missing?
-
 ## Management Concerns
 
-Potential management concerns regarding the Maxwell Creek watershed may occur because negotiations are required to be made between the landowners and conservancy covenant holders. The covenant holders have laid out management goals to protect the land, water quality and vegetation at the Maxwell Creek watershed, to be facilitated by landowners and periodic monitoring on the covenant holders end. Despite these measures, the process of maintaining a covenant area can be rigorous and costly, requiring yearly monitoring to ensure agreement terms are met. Potential setbacks for outsider groups are also of concern, particularly, when looking to propose management activities within covenant jurisdictional boundaries.
-
-Literature Cited:
-
-Biebighauser, Thomas. (2014). *Dry Lake Wetland and Stream Restoration Project*. Salt Spring Island Conservancy, Salt Spring Island, BC.title:
+There are potential management concerns regarding the Maxwell Creek watershed because negotiations are required to be made between the landowners and conservancy covenant holders. However, the covenant holders have laid out management goals to protect the land, water quality and vegetation at the Maxwell Creek watershed. Activities are to be facilitated by landowners with periodic monitoring of the area undertaken by the covenant holders. Despite these measures, the process of maintaining a covenant area can be rigorous and costly, requiring yearly monitoring to ensure agreement terms are met. Potential setbacks for outsider groups are also of concern, particularly, when looking to propose management activities within covenant jurisdictional boundaries. Moreover, engagement with local Indigneous peoples as stewards of the land is imperative for management practices. To establish a healthy relationship, sharing knowledge, working with and learning from the Quw’utsun people will be imperative to creating long-term restoration management goals.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
