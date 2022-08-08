@@ -20,12 +20,9 @@ baseMap
 
 The hydrology of the Maxwell Creek watershed is extensive, consisting of several water bodies, creek systems, and wetland zones. Predominant features include: Maxwell Lake, Dry Lake, and the Rippon creek system which connects throughout the watershed. The Maxwell Creek watershed serves as an important feature of Hwmet’utsum, and has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island. In particular, Maxwell Lake provides good quality drinking water for the island, however, this resource is at risk of degradation caused by nutrient loading from the surrounding watershed and roadways. The hydrology of the watershed has also been altered and degraded from its historical state due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) occurred in the mid 1900’s to promote stream channelization to Maxwell Lake, impacting the natural stream flow of Rippon Creek. Channelization effects include the drainage of ephemeral wetlands in the watershed and streambank erosion along the creek bed. 
 
-<!-- Note that all three of these options are required in order to suppress spurious R output
- from the resulting markdown. echo suppresses actual R commands, message suppresses junk
- from standard R builtins, and results suppresses output from st_read which just dumps
- junk to its output -->
-```{r, echo=FALSE, message=FALSE, results='hide'}
+```{r, echo=FALSE, message=FALSE}
 source("scripts/MXC_watershed_map_script.R")
+WatershedMap
 ```
 
 
@@ -33,8 +30,9 @@ source("scripts/MXC_watershed_map_script.R")
 
 The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on >100 year return cycles. Fire data indicates wildfire occurrences in the watershed throughout the 1930’s and 1940’s, and as recently as 2009. While in the surrounding areas, wildfires were recorded through the years of 1952, 1956, 1959, 1982, 1987, 1989, 1995, and 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity. 
 
-```{r, echo=FALSE, message=FALSE, results='hide'}
+```{r, echo=FALSE, message=FALSE}
 source("scripts/MCW_fire_history_map_script.R")
+FirehistMap
 ```
 
 ## Land-use History

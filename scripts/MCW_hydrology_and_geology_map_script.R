@@ -31,21 +31,7 @@ MCW <- st_read("spatial_data/vectors/Shp_files/MCW")
 
 #Making ggplot:
 
-ggplot() + 
-  geom_sf(data = islcoast, color = "black") +
-  geom_sf(data = MCW, color = "lightblue", fill = NA) +
-  geom_sf(data = watersheds, color = "royalblue3", fill = NA) +
-  geom_sf(data = geology, color ="darkorange") +
-  geom_sf(data = streams, color = "aquamarine3") +
-  geom_sf(data = waterbodies, fill = "cyan") +
-  geom_sf(data = watercourses, fill = "dodgerblue4") +
-  coord_sf(xlim = c(458938.9, 462136.9), ylim = c(5406261, 5409918)) +
-  theme(legend.title = element_blank()) +
-  labs(color = "Attributes") +
-  scale_color_manual(values = c("lightblue","royalblue3", "darkorange", "aquamarine3", "cyan", "dodgerblue4"), labels = c("Maxwell Creek Watershed", "watersheds", "geology", "steams", "waterbodies", "watercourses")) +
-  
-  
-ggplot() + 
+p <- ggplot() + 
   geom_sf(data = islcoast, color = "black") +
   geom_sf(data = MCW, color = "lightblue", fill = NA) +
   geom_sf(data = watersheds, color = "royalblue3", fill = NA) +
@@ -58,3 +44,4 @@ ggplot() +
   scale_color_manual(values = c("lightblue","royalblue3", "darkorange", "aquamarine3", "cyan", "dodgerblue4"), labels = c("Maxwell Creek Watershed", "watersheds", "geology", "steams", "waterbodies", "watercourses")) +
   ggtitle("Maxwell Creek Wateshed Geology and Hydrology Map")
  
+print(p)

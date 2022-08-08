@@ -8,22 +8,22 @@ lat_lon <- function (data) {
 }
 
 #Layer 1: island coast
-islcoast <- st_read("spatial_data/vectors/Shp_files/Island")
+islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet=TRUE)
 
 #layer 2: CAD_MCW
-CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
+CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW", quiet=TRUE)
 
 #Layer 3: MCW
-MCW <- st_read("spatial_data/vectors/Shp_files/MCW")
+MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet=TRUE)
 
 #Layer 4: waterbodies 
-waterbodies <- st_read("spatial_data/vectors/Shp_files/RAR_water_bodies")
+waterbodies <- st_read("spatial_data/vectors/Shp_files/RAR_water_bodies", quiet=TRUE)
 
 #Layer 5: watercourses
-watercourses <- st_read("spatial_data/vectors/Shp_files/RAR_water_courses")
+watercourses <- st_read("spatial_data/vectors/Shp_files/RAR_water_courses", quiet=TRUE)
 
 #Layer 6: watersheds
-watersheds <- st_read("spatial_data/vectors/Shp_files/Watershed_CRD")
+watersheds <- st_read("spatial_data/vectors/Shp_files/Watershed_CRD", quiet=TRUE)
 
 #Mapping using ggplot2:
 
@@ -43,11 +43,11 @@ print(p)
 
 WatershedMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
-  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0.8) %>%
-  addPolygons(data = lat_lon(MCW), color = "black", weight = 1.5, fillColor = NA) %>%
-  addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 1.5, fillOpacity = 0.8) %>%
-  addPolylines(data = lat_lon(watersheds), color = "#0000EE", weight = 2) %>%
+  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0) %>%
+#  addPolygons(data = lat_lon(MCW), color = "black", weight = 1.5, fillColor = NA) %>%
+#  addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 1.5, fillOpacity = 0.8) %>%
+#  addPolylines(data = lat_lon(watersheds), color = "#0000EE", weight = 2) %>%
   addPolygons(data = lat_lon(watercourses), weight = 1.5, fillOpacity = 0.8, fillColor = "royalblue") %>%
-  addPolygons(data = lat_lon(waterbodies), weight = 1.5, fillOpacity = 0.8, fillColor = "dodgerblue1")  
+  addPolygons(data = lat_lon(waterbodies), weight = 1.5, fillOpacity = 0.8, fillColor = "dodgerblue")  
   
 print(WatershedMap)

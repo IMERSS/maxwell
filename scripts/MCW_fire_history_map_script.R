@@ -44,7 +44,7 @@ FirehistMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
   addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
   addPolygons(data = lat_lon(h_fires), color = "#050505", weight = 2, fillOpacity = 0.7, fillColor = "red") %>%
-  addPolygons(data = lat_lon(MCW), color = "royalblue4", weight = 2, fillOpacity = 0.7, fillColor = "royalblue4") %>%
+#  addPolygons(data = lat_lon(MCW), color = "royalblue4", weight = 2, fillOpacity = 0.7, fillColor = "royalblue4") %>%
   addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 2, fillOpacity = 0, fillColor = NA) %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855) %>%
   addLegend(position = "topright", labels = "Fire Years", colors = "red")
