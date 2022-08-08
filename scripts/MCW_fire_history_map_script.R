@@ -1,18 +1,24 @@
 ##Historic fires ggplot
 library(sf)
 library(ggplot2)
+library(rgdal)
+library(leaflet)
+
+lat_lon <- function (data) {
+  return(st_transform(data, "+proj=longlat +datum=WGS84"))
+}
 
 #Layer 1: island coastline
-islcoast <- st_read("spatial_data/vectors/Shp_files/Island")
+islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet = TRUE)
 
 #Layer 2: MCW
-MCW <- st_read("spatial_data/vectors/Shp_files/MCW")
+MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet = TRUE)
 
 #Layer #3: historic fires
-h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires")
+h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires", quiet = TRUE)
 
 #Layer 4: CAD_MCW
-CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW")
+CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW", quiet = TRUE)
 
 ##Mapping based on fire year: 
 #changing FIRE_YEAR numeric attribute to character:
@@ -30,3 +36,17 @@ p <- ggplot() +
   ggtitle("Fire History Reference Map")
 
 print(p)
+
+
+##Leaflet map: 
+
+FirehistMap <- leaflet() %>%
+  addTiles(options = providerTileOptions(opacity = 0.5)) %>%
+  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
+  addPolygons(data = lat_lon(h_fires), color = "#050505", weight = 2, fillOpacity = 0.7, fillColor = "red") %>%
+  addPolygons(data = lat_lon(MCW), color = "royalblue4", weight = 2, fillOpacity = 0.7, fillColor = "royalblue4") %>%
+  addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 2, fillOpacity = 0, fillColor = NA) %>%
+  fitBounds(-123.564, 48.802, -123.516, 48.855) %>%
+  addLegend(position = "topright", labels = "Fire Years", colors = "red")
+
+print(FirehistMap)

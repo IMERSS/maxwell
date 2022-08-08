@@ -1,6 +1,11 @@
-##Maxwell Creek Watershed Map: 
 library(sf)
 library(ggplot2)
+library(leaflet)
+library(rgdal)
+
+lat_lon <- function (data) {
+  return(st_transform(data, "+proj=longlat +datum=WGS84"))
+}
 
 #Layer 1: island coast
 islcoast <- st_read("spatial_data/vectors/Shp_files/Island")
@@ -33,3 +38,16 @@ p <- ggplot() +
   ggtitle("Maxwell Creek Watershed Map")
 
 print(p)
+
+#Leaflet map:
+
+WatershedMap <- leaflet() %>%
+  addTiles(options = providerTileOptions(opacity = 0.5)) %>%
+  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0.8) %>%
+  addPolygons(data = lat_lon(MCW), color = "black", weight = 1.5, fillColor = NA) %>%
+  addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 1.5, fillOpacity = 0.8) %>%
+  addPolylines(data = lat_lon(watersheds), color = "#0000EE", weight = 2) %>%
+  addPolygons(data = lat_lon(watercourses), weight = 1.5, fillOpacity = 0.8, fillColor = "royalblue") %>%
+  addPolygons(data = lat_lon(waterbodies), weight = 1.5, fillOpacity = 0.8, fillColor = "dodgerblue1")  
+  
+print(WatershedMap)
