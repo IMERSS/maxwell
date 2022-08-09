@@ -14,6 +14,9 @@ islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet = TRUE)
 #Layer 2: MCW
 MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet = TRUE)
 
+# drop Z and M dimensions from MCW
+MCW <- st_zm(MCW, drop = T, what = "ZM")
+
 #Layer #3: historic fires
 h_fires <- st_read("spatial_data/vectors/Shp_files/Historic_fires", quiet = TRUE)
 
@@ -40,7 +43,7 @@ FirehistMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
   addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
   addPolygons(data = lat_lon(h_fires), color = "#050505", weight = 2, fillOpacity = 0.7, fillColor = "red") %>%
-#  addPolygons(data = lat_lon(MCW), color = "royalblue4", weight = 2, fillOpacity = 0.7, fillColor = "royalblue4") %>%
+  addPolygons(data = lat_lon(MCW), color = "royalblue4", weight = 2, fillOpacity = 0.7, fillColor = "royalblue4") %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855) %>%
   addLegend(position = "topright", labels = "Fire Years", colors = "red")
 
