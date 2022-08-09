@@ -48,7 +48,7 @@ WatershedMap <- leaflet() %>%
   addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0) %>%
   addPolygons(data = lat_lon(MCW), color = "black", weight = 1.5, fillColor = NA) %>%
   addPolylines(data = lat_lon(watersheds), color = "#0000EE", weight = 2) %>%
-  addPolygons(data = lat_lon(watercourses), weight = 1.5, fillOpacity = 0.8, fillColor = "royalblue") %>%
+  addPolylines(data = lat_lon(watercourses), weight = 1.5, fillOpacity = 0.8, fillColor = "royalblue") %>%
   addPolygons(data = lat_lon(waterbodies), weight = 1.5, fillOpacity = 0.8, fillColor = "dodgerblue")  
   
 print(WatershedMap)
