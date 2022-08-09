@@ -25,7 +25,7 @@ MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet=TRUE)
 
 baseMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
-  addPolygons(data = lat_lon(MCW), color = "blue", weight = 2, fillOpacity = 0) %>%
+#  addPolygons(data = lat_lon(MCW), color = "blue", weight = 2, fillOpacity = 0) %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855)
 
 print(baseMap)
