@@ -71,6 +71,7 @@ jurisPalette <- colorFactor(jurisColors, juris)
 
 jurisMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
+  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
   addPolygons(data = lat_lon(CAD_MCW), color = "black", weight = 1.5, fillOpacity = 0.8, fillColor = ~jurisPalette(LABEL)) %>%
   addPolygons(data = lat_lon(PA_MCW), color = "black", weight = 1.5, fillOpacity = 0.8, fillColor = ~jurisPalette(COV_HLD1)) %>%
     # For some reason these three lines each give an "options" error even though we succeed in plotting "roads" in land use map

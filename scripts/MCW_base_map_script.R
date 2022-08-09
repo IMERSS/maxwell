@@ -27,6 +27,7 @@ MCW <- st_zm(MCW, drop = T, what = "ZM")
 # print(p)
 
 baseMap <- leaflet() %>%
+  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
   addPolygons(data = lat_lon(MCW), color = "blue", weight = 2, fillOpacity = 0) %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855)
