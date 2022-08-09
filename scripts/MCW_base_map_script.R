@@ -14,6 +14,9 @@ islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet=TRUE)
 #Layer 2: MCW
 MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet=TRUE)
 
+# drop Z and M dimensions from MCW
+MCW <- st_zm(MCW, drop = T, what = "ZM")
+
 # p <- ggplot() +
 #   geom_sf(data = islcoast, color = "black") + 
 #   geom_sf(data = MCW, fill = "blue") +
