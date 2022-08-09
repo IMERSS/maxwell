@@ -11,10 +11,7 @@ lat_lon <- function (data) {
 #Layer 1: island coastline
 islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet=TRUE)
 
-#Layer 2: CAD_MCW
-CAD_MCW <- st_read("spatial_data/vectors/Shp_files/MXCK_CAD_clipped_MXCW", quiet=TRUE)
-
-#Layer 3: MCW
+#Layer 2: MCW
 MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet=TRUE)
 
 # p <- ggplot() +
@@ -30,7 +27,7 @@ baseMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
 # "options" error on plotting MCW
 #  addPolygons(data = lat_lon(MCW), color = "blue", weight = 2, fillOpacity = 0) %>%
-  addPolygons(data = lat_lon(CAD_MCW), color = "red", weight = 2, fillOpacity = 0) %>%
+  addPolygons(data = lat_lon(MCW), color = "red", weight = 2, fillOpacity = 0) %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855)
 
 print(baseMap)
