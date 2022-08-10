@@ -9,7 +9,7 @@ lat_lon <- function (data) {
 }
 
 #Layer 1: island coastline
-islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet = TRUE)
+# islcoast <- st_read("spatial_data/vectors/Shp_files/Island", quiet = TRUE)
 
 #Layer 2: MCW
 MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet = TRUE)
@@ -26,7 +26,7 @@ h_fires$FIRE_YEAR <- as.character(h_fires$FIRE_YEAR)
 
 #Map clipped to MXCW:
 p <- ggplot() +
-  geom_sf(data = islcoast, color ="black", fill = "beige") +
+#  geom_sf(data = islcoast, color ="black", fill = "beige") +
   geom_sf(data = h_fires, mapping = aes(fill = FIRE_YEAR)) +
   geom_sf(data = MCW, color = "royalblue4", fill = "NA") +
   geom_sf_text(data = h_fires, aes(label = FIRE_YEAR), check_overlap = TRUE) +
