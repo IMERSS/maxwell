@@ -41,7 +41,7 @@ print(p)
 
 FirehistMap <- leaflet() %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
-  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
+#  addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
   addPolygons(data = lat_lon(h_fires), color = "#050505", weight = 2, fillOpacity = 0.7, fillColor = "red") %>%
   addPolygons(data = lat_lon(MCW), color = "blue", weight = 2, fillOpacity = 0) %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855) %>%
