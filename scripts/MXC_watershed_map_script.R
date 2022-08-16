@@ -1,6 +1,7 @@
 library(sf)
 library(ggplot2)
 library(leaflet)
+library(raster)
 library(rgdal)
 
 lat_lon <- function (data) {
@@ -16,7 +17,7 @@ MCW <- st_read("spatial_data/vectors/Shp_files/MCW", quiet=TRUE)
 # drop Z and M dimensions from MCW
 MCW <- st_zm(MCW, drop = T, what = "ZM")
 
-#Layer 3: waterbodies 
+#Layer 3: water bodies 
 waterbodies <- st_read("spatial_data/vectors/Shp_files/RAR_water_bodies", quiet=TRUE)
 
 #Layer 4: watercourses
@@ -28,27 +29,22 @@ watersheds <- st_read("spatial_data/vectors/Shp_files/Watershed_CRD", quiet=TRUE
 # drop Z and M dimensions from watersheds
 watersheds <- st_zm(watersheds, drop = T, what = "ZM")
 
-#Mapping using ggplot2:
+#Layer 6: bare earth raster 
+hillshade <- raster("spatial_data/rasters/BareEarth_hillshade_resampled_10m.tif")
 
-p <- ggplot() +
-  geom_sf(data = islcoast, color ="black", fill = "beige") +
-  geom_sf(data = MCW, color = "black", fill = NA) +
-  geom_sf(data = watersheds, color = "blue2", fill = "NA") +
-  geom_sf(data = waterbodies, color = "dodgerblue1", fill = "dodgerblue1") +
-  geom_sf(data = watercourses, color = "royalblue4", fill = "NA") +
-  coord_sf(xlim = c(457989.4, 463653.3), ylim = c(5405057, 5411462), expand = FALSE) +
-  ggtitle("Maxwell Creek Watershed Map")
+#Render leaflet map
 
-print(p)
-
-#Leaflet map:
+#Create pallette
+pal <- colorNumeric(c("#0C2C84", "#41B6C4", "#FFFFCC"), values(hillshade),
+                    na.color = "transparent")
 
 WatershedMap <- leaflet() %>%
-  addTiles(options = providerTileOptions(opacity = 0.5)) %>%
+#  addTiles(options = providerTileOptions(opacity = 0.5)) %>%
+  addRasterImage(hillshade, colors = pal, opacity = 0.8) %>%
   addPolygons(data = lat_lon(islcoast), color = "black", weight = 1.5, fillOpacity = 0) %>%
   addPolygons(data = lat_lon(MCW), color = "black", weight = 1.5, fillColor = NA) %>%
   addPolylines(data = lat_lon(watersheds), color = "#0000EE", weight = 2) %>%
   addPolylines(data = lat_lon(watercourses), weight = 1.5, fillOpacity = 0.8, fillColor = "royalblue") %>%
-  addPolygons(data = lat_lon(waterbodies), weight = 1.5, fillOpacity = 0.8, fillColor = "dodgerblue")  
-  
+  addPolygons(data = lat_lon(waterbodies), weight = 1.5, fillOpacity = 0.8, fillColor = "dodgerblue")
+ 
 print(WatershedMap)
