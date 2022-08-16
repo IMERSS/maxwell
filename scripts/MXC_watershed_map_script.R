@@ -30,7 +30,7 @@ watersheds <- st_read("spatial_data/vectors/Shp_files/Watershed_CRD", quiet=TRUE
 watersheds <- st_zm(watersheds, drop = T, what = "ZM")
 
 #Layer 6: bare earth raster 
-hillshade <- raster("spatial_data/rasters/BareEarth_hillshade_resampled_10m.tif")
+hillshade <- raster("spatial_data/rasters/BareEarth_hillshade_resampled_5m.tif")
 
 #Render leaflet map
 
