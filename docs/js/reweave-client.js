@@ -70,6 +70,24 @@ maxwell.leafletPolyMethods = {
     addPolylines: "polyline"
 };
 
+maxwell.addMarkers = function (lat, lon, icon, label, labelOptions, paneOptions, group) {
+    // Note that labelOnlyMarkers are spat out in https://github.com/rstudio/leaflet/blob/main/R/layers.R#L826
+    // We detect this through the special case of a width set to 1 and use a div icon which is much
+    // easier to configure than the HTMLwidgets strategy of a permanently open tooltip attached to the marker      
+    var Licon = icon.iconWidth === 1 ? 
+        L.divIcon({
+            html: "<div>" + label + "</div>",
+            iconSize: null,
+            className: "mxcw-mapLabel"
+        }) :
+        L.icon({
+            iconUrl: icon.iconUrl,
+            iconSize: [icon.iconWidth, icon.iconHeight]
+        });
+    var marker = L.marker([lat, lon], Object.assign({}, {icon: Licon}, paneOptions)).addTo(group);
+    // from https://github.com/rstudio/leaflet/blob/main/javascript/src/methods.js#L189
+};
+
 maxwell.widgetToPane = function (map, calls, index) {
     var paneName = "maxwell-pane-" + index;
     var pane = map.createPane(paneName);
@@ -79,14 +97,28 @@ maxwell.widgetToPane = function (map, calls, index) {
     };
     var group = L.layerGroup(paneOptions).addTo(map);
     calls.forEach(function (call) {
-        var shapes = call.args[0],
-            options = Object.assign({}, call.args[3], paneOptions);
         // See https://github.com/rstudio/leaflet/blob/main/javascript/src/methods.js#L550
-        var leafletMethod = maxwell.leafletPolyMethods[call.method];
-        if (leafletMethod) {
+        var polyMethod = maxwell.leafletPolyMethods[call.method];
+        if (polyMethod) {
+            var shapes = call.args[0],
+                options = Object.assign({}, call.args[3], paneOptions);
             shapes.forEach((shape, index) =>
-                L[leafletMethod](maxwell.leafletiseCoords(shape),
+                L[polyMethod](maxwell.leafletiseCoords(shape),
                     maxwell.resolveVectorOptions(options, index)).addTo(group));
+        } else if (call.method === "addRasterImage") {
+        // args: url, bounds, opacity
+            var opacity = call.args[2] ?? 1.0;
+            L.imageOverlay(call.args[0], call.args[1], Object.assign({}, {
+                opacity: opacity
+            }, paneOptions)).addTo(group);
+        } else if (call.method === "addMarkers") {
+            // Very limited support currently - just for labelOnlyMarkers used in fire history
+            // args: lat, lng, icon, layerId, group, options, popup, popupOptions,
+            // clusterOptions, clusterId, label, labelOptions, crosstalkOptions
+
+           maxwell.addMarkers(call.args[0], call.args[1], call.args[2], call.args[10], call.args[11], paneOptions, group);
+        } else {
+            console.log("Unknown R leaflet method " + call.method + " discarded");
         }
     });
     return pane;
@@ -106,12 +138,10 @@ maxwell.addDocumentListeners = function (instance) {
     content.addEventListener("scroll", function () {
         var scrollTop = content.scrollTop;
         var offsets = widgets.map(widget => widget.section.offsetTop);
-        console.log("Got offsets ", instance.offsets, " with scrollTop " + scrollTop);
         var index = offsets.findIndex(offset => offset > (scrollTop - 200));
         if (index === -1) {
             index = widgets.length - 1;
         }
-        console.log("Chosen index ", index);
         instance.updateActiveGroup(index);
     });
 };

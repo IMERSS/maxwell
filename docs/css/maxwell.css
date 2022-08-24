@@ -62,3 +62,13 @@ h2 {
     transition-property: background-color, outline;
     transition-duration: 400ms;
 }
+
+.mxcw-mapLabel {
+    z-index: 999 !important;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mxcw-mapLabel > div {
+    transform: translateX(-50%) translateY(-50%);
+    
