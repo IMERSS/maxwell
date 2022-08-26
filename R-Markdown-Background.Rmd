@@ -1,7 +1,7 @@
 ---
 title: Maxwell Creek Watershed Restoration Project
 author: Angeline Emmott, Andrew Simon, Antranig Basman
-date: August 4, 2022
+date: August 26, 2022
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
@@ -30,7 +30,7 @@ WatershedMap
 
 The Maxwell Creek watershed resides within the Coastal Douglas-fir (CDF) forest biogeoclimatic zone, which when mature provides resilience to fires due to its multi-layered canopy, abundance of coarse woody debris, and deep root networks. Fire disturbance regimes are natural in this forest type, occurring periodically as stand-replacing events that take place on >100 year return cycles. Fire data indicates wildfire occurrences in the watershed throughout the 1930’s and 1940’s, and as recently as 2009. While in the surrounding areas, wildfires were recorded through the years of 1952, 1956, 1959, 1982, 1987, 1989, 1995, and 2008. Data on the severity of these fires are limited, however, visual fire damage is evident at the site. Historical logging of the Maxwell Creek watershed throughout the second half of the 20th century may play a role in the occurrence of such fires, due to diminished forest structure and complexity. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_fire_history_map_script.R")
 FirehistMap
 ```
