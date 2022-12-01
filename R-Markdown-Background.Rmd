@@ -1,7 +1,7 @@
 ---
 title: Maxwell Creek Watershed Restoration Project
-author: Angeline Emmott, Andrew Simon, Antranig Basman
-date: August 26, 2022
+author: Angeline Emmott, Andrew Simon, Antranig Basman, Ruth Waldick
+date: December 1, 2022
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
@@ -57,6 +57,15 @@ A total of 297.8 acres of Maxwell watershed forest area is currently owned by NS
 ```{r, echo=FALSE, message=FALSE}
 source("scripts/Jurisdictional_reference_map_script.R")
 jurisMap
+```
+
+## Study Sites
+
+40 Study sites were selected from a set of 400 potential candidates, with a variety of stratified site conditions (open/closed, wet/dry) [Insert more description here]
+
+```{r, echo=FALSE, message=FALSE}
+source("scripts/MCW_Study_site_map_script.R")
+StudySiteMap
 ```
 
 ## Management Concerns

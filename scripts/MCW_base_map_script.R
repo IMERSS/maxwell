@@ -1,7 +1,6 @@
 ##Island Base map:
 library(sf)
 library(leaflet)
-library(rgdal)
 library(dplyr)
 
 source("scripts/utils.R")

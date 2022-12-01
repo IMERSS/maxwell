@@ -1,7 +1,6 @@
 ##Hydrology and geology map:
 
 library(sf)
-library(ggplot2)
 #Layer 1: island coastline
 islcoast <- st_read("spatial_data/vectors/Shp_files/Island")
 

@@ -6,6 +6,10 @@ h2 {
     margin-block-start: 0px;
 }
 
+.main-container {
+    padding-bottom: 50em;
+}
+
 .mxcw-banner {
     font-size: 36px;
 }
@@ -65,10 +69,19 @@ h2 {
 
 .mxcw-mapLabel {
     z-index: 999 !important;
+}
+
+.mxcw-fireLabel {
     font-size: 15px;
     font-weight: bold;
 }
 
+.mxcw-siteLabel {
+    font-size: 10px;
+    top: -19px;
+    color: white;
+}
+
 .mxcw-mapLabel > div {
     transform: translateX(-50%) translateY(-50%);
-    
+}

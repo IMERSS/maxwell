@@ -1,8 +1,6 @@
 library(sf)
-library(ggplot2)
 library(leaflet)
 library(raster)
-library(rgdal)
 
 source("scripts/utils.R")
 

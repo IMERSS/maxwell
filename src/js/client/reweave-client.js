@@ -6,9 +6,9 @@ window.HTMLWidgets = window.HTMLWidgets || {};
 
 // Taken from https://github.com/ramnathv/htmlwidgets/blob/master/inst/www/htmlwidgets.js
 window.HTMLWidgets.dataframeToD3 = function (df) {
-    var names = [];
-    var length;
-    for (var name in df) {
+    const names = [];
+    let length;
+    for (const name in df) {
         if (df.hasOwnProperty(name)) {
             names.push(name);
         }
@@ -19,11 +19,11 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
         }
         length = df[name].length;
     }
-    var results = [];
-    var item;
-    for (var row = 0; row < length; row++) {
+    const results = [];
+    let item;
+    for (let row = 0; row < length; row++) {
         item = {};
-        for (var col = 0; col < names.length; col++) {
+        for (let col = 0; col < names.length; col++) {
             item[names[col]] = df[names[col]][row];
         }
         results.push(item);
@@ -31,19 +31,19 @@ window.HTMLWidgets.dataframeToD3 = function (df) {
     return results;
 };
 
-var maxwell = {};
+const maxwell = {};
 
 maxwell.findLeafletWidgets = function () {
-    var widgets = [...document.querySelectorAll(".html-widget.leaflet")];
+    const widgets = [...document.querySelectorAll(".html-widget.leaflet")];
     console.log("Found " + widgets.length + " widgets");
     return widgets.map(function (widget) {
-        var id = widget.id;
-        var dataNode = document.querySelector("[data-for=\"" + id + "\"");
+        const id = widget.id;
+        const dataNode = document.querySelector("[data-for=\"" + id + "\"");
         console.log("Got data node ", dataNode);
-        var data = JSON.parse(dataNode.innerHTML);
+        const data = JSON.parse(dataNode.innerHTML);
         console.log("Got data ", data);
-        var section = widget.closest(".section.level2");
-        var heading = section.querySelector("h2");
+        const section = widget.closest(".section.level2");
+        const heading = section.querySelector("h2");
         return {
             node: widget,
             data: data,
@@ -59,10 +59,15 @@ maxwell.leafletiseCoords = function (coords) {
 
 // Undo bizarre "multiplexing" which is achieved by the HTMLWidgets "dataFrame" system
 maxwell.resolveVectorOptions = function (options, index) {
-    var entries = Object.entries(options).map(([key, val]) =>
+    const entries = Object.entries(options).map(([key, val]) =>
         [key, Array.isArray(val) ? val[index] : val]
     );
     return Object.fromEntries(entries);
+};
+
+// Another demultiplexing for dataframe args
+maxwell.projectArgs = function (args, index) {
+    return args.map(arg => Array.isArray(arg) ? arg[index] : arg);
 };
 
 maxwell.leafletPolyMethods = {
@@ -70,44 +75,56 @@ maxwell.leafletPolyMethods = {
     addPolylines: "polyline"
 };
 
+maxwell.divIcon = function (label, className) {
+    return L.divIcon({
+        html: "<div>" + label + "</div>",
+        iconSize: null,
+        className: className
+    });
+};
+
 maxwell.addMarkers = function (lat, lon, icon, label, labelOptions, paneOptions, group) {
     // Note that labelOnlyMarkers are spat out in https://github.com/rstudio/leaflet/blob/main/R/layers.R#L826
     // We detect this through the special case of a width set to 1 and use a div icon which is much
-    // easier to configure than the HTMLwidgets strategy of a permanently open tooltip attached to the marker      
-    var Licon = icon.iconWidth === 1 ? 
-        L.divIcon({
-            html: "<div>" + label + "</div>",
-            iconSize: null,
-            className: "mxcw-mapLabel"
-        }) :
-        L.icon({
-            iconUrl: icon.iconUrl,
-            iconSize: [icon.iconWidth, icon.iconHeight]
-        });
-    var marker = L.marker([lat, lon], Object.assign({}, {icon: Licon}, paneOptions)).addTo(group);
+    // easier to configure than the HTMLwidgets strategy of a permanently open tooltip attached to the marker
+    if (!icon) {
+        const markerIcon = new L.Icon.Default();
+        markerIcon.options.shadowSize = [0, 0];
+        L.marker([lat, lon], Object.assign({}, {icon: markerIcon}, paneOptions)).addTo(group);
+        const divIcon = maxwell.divIcon(label, labelOptions.className);
+        L.marker([lat, lon], Object.assign({}, {icon: divIcon}, paneOptions)).addTo(group);
+    } else {
+        const Licon = icon.iconWidth === 1 ?
+            maxwell.divIcon(label) :
+            L.icon({
+                iconUrl: icon.iconUrl,
+                iconSize: [icon.iconWidth, icon.iconHeight]
+            });
+        L.marker([lat, lon], Object.assign({}, {icon: Licon}, paneOptions)).addTo(group);
+    }
     // from https://github.com/rstudio/leaflet/blob/main/javascript/src/methods.js#L189
 };
 
 maxwell.widgetToPane = function (map, calls, index) {
-    var paneName = "maxwell-pane-" + index;
-    var pane = map.createPane(paneName);
+    const paneName = "maxwell-pane-" + index;
+    const pane = map.createPane(paneName);
     pane.classList.add("mxcw-mapPane");
-    var paneOptions = {
+    const paneOptions = {
         pane: paneName
     };
-    var group = L.layerGroup(paneOptions).addTo(map);
+    const group = L.layerGroup(paneOptions).addTo(map);
     calls.forEach(function (call) {
         // See https://github.com/rstudio/leaflet/blob/main/javascript/src/methods.js#L550
-        var polyMethod = maxwell.leafletPolyMethods[call.method];
+        const polyMethod = maxwell.leafletPolyMethods[call.method];
         if (polyMethod) {
-            var shapes = call.args[0],
+            const shapes = call.args[0],
                 options = Object.assign({}, call.args[3], paneOptions);
             shapes.forEach((shape, index) =>
                 L[polyMethod](maxwell.leafletiseCoords(shape),
                     maxwell.resolveVectorOptions(options, index)).addTo(group));
         } else if (call.method === "addRasterImage") {
         // args: url, bounds, opacity
-            var opacity = call.args[2] ?? 1.0;
+            const opacity = call.args[2] ?? 1.0;
             L.imageOverlay(call.args[0], call.args[1], Object.assign({}, {
                 opacity: opacity
             }, paneOptions)).addTo(group);
@@ -115,8 +132,14 @@ maxwell.widgetToPane = function (map, calls, index) {
             // Very limited support currently - just for labelOnlyMarkers used in fire history
             // args: lat, lng, icon, layerId, group, options, popup, popupOptions,
             // clusterOptions, clusterId, label, labelOptions, crosstalkOptions
-
-           maxwell.addMarkers(call.args[0], call.args[1], call.args[2], call.args[10], call.args[11], paneOptions, group);
+            const markerArgs = [call.args[0], call.args[1], call.args[2], call.args[10], call.args[11], paneOptions, group];
+            if (Array.isArray(call.args[0])) {
+                for (let i = 0; i < call.args[0].length; ++i) {
+                    maxwell.addMarkers.apply(null, maxwell.projectArgs(markerArgs, i));
+                }
+            } else {
+                maxwell.addMarkers.apply(null, markerArgs);
+            }
         } else {
             console.log("Unknown R leaflet method " + call.method + " discarded");
         }
@@ -130,15 +153,15 @@ maxwell.findCall = function (calls, method) {
 };
 
 maxwell.addDocumentListeners = function (instance) {
-    var widgets = instance.widgets;
+    const widgets = instance.widgets;
     widgets.forEach(function (widget, i) {
         widget.heading.addEventListener("click", () => instance.updateActiveGroup(i));
     });
-    var content = document.querySelector(".mxcw-content");
+    const content = document.querySelector(".mxcw-content");
     content.addEventListener("scroll", function () {
-        var scrollTop = content.scrollTop;
-        var offsets = widgets.map(widget => widget.section.offsetTop);
-        var index = offsets.findIndex(offset => offset > (scrollTop - 200));
+        const scrollTop = content.scrollTop;
+        const offsets = widgets.map(widget => widget.section.offsetTop);
+        let index = offsets.findIndex(offset => offset > (scrollTop - 200));
         if (index === -1) {
             index = widgets.length - 1;
         }
@@ -185,19 +208,19 @@ class maxwell_Leaflet extends EventTarget {
 }
 
 maxwell.instantiateLeaflet = function (selector) {
-    var widgets = maxwell.findLeafletWidgets();
-    var node = document.querySelector(selector);
-    var map = L.map(node);
+    const widgets = maxwell.findLeafletWidgets();
+    const node = document.querySelector(selector);
+    const map = L.map(node);
 
-    var data0 = widgets[0].data.x;
-    var bounds = data0.fitBounds;
+    const data0 = widgets[0].data.x;
+    const bounds = data0.fitBounds;
     map.fitBounds([[bounds[0], bounds[1]], [bounds[2], bounds[3]]]);
 
-    var tiles = maxwell.findCall(data0.calls, "addTiles");
+    const tiles = maxwell.findCall(data0.calls, "addTiles");
     L.tileLayer(tiles.args[0], tiles.args[3]).addTo(map);
 
-    var panes = widgets.map((widget, i) => maxwell.widgetToPane(map, widget.data.x.calls, i));
-    var instance = new maxwell_Leaflet({
+    const panes = widgets.map((widget, i) => maxwell.widgetToPane(map, widget.data.x.calls, i));
+    const instance = new maxwell_Leaflet({
         container: node,
         map: map,
         widgets: widgets,
