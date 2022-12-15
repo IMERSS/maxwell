@@ -50,25 +50,33 @@ const removeImageMaps = function (container) {
 };
 
 const reweaveFile = function (infile, outfile, options) {
-    const document = parseDocument(infile);
+    const document = parseDocument(resolvePath(infile));
     const container = document.querySelector(".main-container");
     hideLeafletWidgets(container);
     removeImageMaps(container);
     container.querySelector("h1").remove();
-    const template = parseDocument(options.template);
+    const template = parseDocument(resolvePath(options.template));
     const target = template.querySelector(".mxcw-content");
     target.appendChild(container);
     const outMarkup = "<!DOCTYPE html>" + template.documentElement.outerHTML;
-    writeFile(outfile, outMarkup);
+    writeFile(resolvePath(outfile), outMarkup);
 };
 
-const infile = resolvePath("%maxwell/docs/R-Markdown-Background.html");
-const outfile = resolvePath("%maxwell/docs/R-Markdown-Background-Rewoven.html");
-const template = resolvePath("%maxwell/src/html/template.html");
+const reweaveJobs = [{
+    infile: "%maxwell/docs/R-Markdown-Background.html",
+    outfile: "%maxwell/docs/R-Markdown-Background-Rewoven.html",
+    options: {
+        template: "%maxwell/src/html/template.html"
+    }
+}, {
+    infile: "%maxwell/docs/R-Markdown-Courtier.html",
+    outfile: "%maxwell/docs/R-Markdown-Courtier-Rewoven.html",
+    options: {
+        template: "%maxwell/src/html/template-Courtier.html"
+    }
+}];
 
-reweaveFile(infile, outfile, {
-    template: template
-});
+reweaveJobs.forEach(rec => reweaveFile(rec.infile, rec.outfile, rec.options));
 
 /** Copy dependencies into docs directory for GitHub pages **/
 

@@ -161,7 +161,7 @@ maxwell.addDocumentListeners = function (instance) {
     content.addEventListener("scroll", function () {
         const scrollTop = content.scrollTop;
         const offsets = widgets.map(widget => widget.section.offsetTop);
-        let index = offsets.findIndex(offset => offset > (scrollTop - 200));
+        let index = offsets.findIndex(offset => offset > (scrollTop - 100));
         if (index === -1) {
             index = widgets.length - 1;
         }
