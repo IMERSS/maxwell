@@ -19,12 +19,12 @@ baseMap
 ## Hydrology
 
 The hydrology of the Maxwell Creek watershed is extensive, consisting of several water bodies, creek systems, and wetland zones. Predominant features include: Maxwell Lake, Dry Lake, and the Rippon creek system which connects throughout the watershed. The Maxwell Creek watershed serves as an important feature of Hwmet’utsum, and has gained interest as the only remaining, relatively undeveloped watershed for potable water on Salt Spring Island. In particular, Maxwell Lake provides good quality drinking water for the island, however, this resource is at risk of degradation caused by nutrient loading from the surrounding watershed and roadways. The hydrology of the watershed has also been altered and degraded from its historical state due to drainage and ditching for agricultural purposes. Specifically, deep ditching around Dry lake (southeast of Maxwell Lake) occurred in the mid 1900’s to promote stream channelization to Maxwell Lake, impacting the natural stream flow of Rippon Creek. Channelization effects include the drainage of ephemeral wetlands in the watershed and streambank erosion along the creek bed. 
-
+<!--
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MXC_watershed_map_script.R")
 WatershedMap
 ```
-
+-->
 
 ## Fire history
 
