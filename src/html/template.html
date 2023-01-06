@@ -9,7 +9,8 @@
 
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
     <script src="js/reweave-client.js"></script>
-    
+	<script src="js/site.js"></script>
+
     <title>Maxwell Creek Watershed Restoration Project</title>
 </head>
 <body>
@@ -21,14 +22,19 @@
 		    <div class="mxcw-map">
 		    </div>
 		    <div class="mxcw-data">
-		    DATA
+		        <div class="mxcw-site">
+				</div>
 		    </div>
 		</div>
 		<div class="mxcw-content">
 		</div>
     </div>
     <script>
-    maxwell.instantiateLeaflet(".mxcw-map");
+    maxwell.instantiateLeaflet(".mxcw-map", {
+		paneMap: {
+			"maxwell-pane-5": new maxwell.siteSelectable()
+		}
+	});
     </script>
 </body>
 </html>

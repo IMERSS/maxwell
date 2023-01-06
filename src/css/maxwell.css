@@ -29,7 +29,6 @@ h2 {
 }
 
 .mxcw-data {
-    font-size: 60px;
     padding: 2rem;
 }
 
@@ -68,7 +67,7 @@ h2 {
 }
 
 .mxcw-mapLabel {
-    z-index: 999 !important;
+    z-index: 9999 !important;
 }
 
 .mxcw-fireLabel {

@@ -88,8 +88,20 @@ const deps = [{
     source: "%maxwell/src/js/client/reweave-client.js",
     target: "%maxwell/docs/js/reweave-client.js"
 }, {
+    source: "%maxwell/src/js/client/site.js",
+    target: "%maxwell/docs/js/site.js"
+}, {
     source: "%maxwell/src/css/maxwell.css",
     target: "%maxwell/docs/css/maxwell.css"
+}, {
+    source: "%maxwell/data/json/sitedata.json",
+    target: "%maxwell/docs/data/json/sitedata.json"
+}, {
+    source: "%maxwell/data/json/sitedata.json",
+    target: "%maxwell/docs/json/sitedata.json"
+}, {
+    source: "%maxwell/src/html/site.html",
+    target: "%maxwell/docs/html/site.html"
 }];
 
 deps.forEach(function (dep) {

@@ -1,0 +1,2133 @@
+{
+    "001": {
+        "longitude": "-123.5288578",
+        "latitude": "48.81570987",
+        "instances": {
+            "220514": {
+                "w": {
+                    "id": "1dTa-nfr821QLdLvgQ4cBahBNAyL9ei50",
+                    "originalsize": "6262068",
+                    "name": "s001-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1xx9SC2y6cj28ar3FYNUq4Z_a6WMyz8a1",
+                    "originalsize": "6928108",
+                    "name": "s001-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1o6lvbCw9pJFh_e0FO9nyrNA4uQDPG1FR",
+                    "originalsize": "6738909",
+                    "name": "s001-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1MV2Cvn8cZJaHd9UBbEHPi0FWyHAmIYUm",
+                    "originalsize": "6680299",
+                    "name": "s001-220514-s.jpg"
+                },
+                "nw": {
+                    "id": "1XjJFuBB0yCkaB0VJGVtEbZ1O7shPOE2F",
+                    "originalsize": "6483645",
+                    "name": "s001-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1tQxwpt7x7Lw3BUc_cvXK-tfDPfykV6Sf",
+                    "originalsize": "7188474",
+                    "name": "s001-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "15VcER_73q3vt2bhadlP6fn3YUmF5TuNf",
+                    "originalsize": "7054714",
+                    "name": "s001-220514-n.jpg"
+                },
+                "e": {
+                    "id": "1ckh2c6RoE4NREBpaQ1HaM_H8dAq1TdAU",
+                    "originalsize": "7111575",
+                    "name": "s001-220514-e.jpg"
+                },
+                "canopy": {
+                    "id": "10T5SHiF7LTltH0F0o7r7MndaMlDmedTi",
+                    "originalsize": "6114141",
+                    "name": "s001-220514-canopy.jpg"
+                }
+            }
+        }
+    },
+    "003": {
+        "longitude": "-123.5259879",
+        "latitude": "48.81747207",
+        "instances": {
+            "220606": {
+                "w": {
+                    "id": "1bcukv4J4dfibRiOhpNMjbhS3QAm-C6ms",
+                    "originalsize": "5765222",
+                    "name": "s003-220606-w.jpg"
+                },
+                "sw": {
+                    "id": "1FgATwqGdNIUJ6x3yG2Cswjj3abszvSCv",
+                    "originalsize": "5831636",
+                    "name": "s003-220606-sw.jpg"
+                },
+                "se": {
+                    "id": "1Hui08a9APGCmVDha7fTPEGegm5s5Osdc",
+                    "originalsize": "5959805",
+                    "name": "s003-220606-se.jpg"
+                },
+                "s": {
+                    "id": "1kUZmXkMYsdKbOU_HsNvLwea-SNP8iRYu",
+                    "originalsize": "6369259",
+                    "name": "s003-220606-s.jpg"
+                },
+                "nw": {
+                    "id": "1PMsvSt2Z_zQwSH19et6r501q0EPT08wf",
+                    "originalsize": "6543209",
+                    "name": "s003-220606-nw.jpg"
+                },
+                "ne": {
+                    "id": "1yuPvedElrV0DXnFziw4IalEQQYUuL44R",
+                    "originalsize": "6088096",
+                    "name": "s003-220606-ne.jpg"
+                },
+                "n": {
+                    "id": "1Ntk6IFCN-k7CIkgQuBPedeB31lIh2Z2c",
+                    "originalsize": "5984631",
+                    "name": "s003-220606-n.jpg"
+                },
+                "e": {
+                    "id": "13ieQ9LKuqV5id4nerYLgWeC60Eq53vc8",
+                    "originalsize": "5795921",
+                    "name": "s003-220606-e.jpg"
+                },
+                "canopy": {
+                    "id": "1w5Ti7Kswhm4A1boVyZW0mbW7rADYEbBm",
+                    "originalsize": "6020369",
+                    "name": "s003-220606-canopy.jpg"
+                }
+            },
+            "220514": {
+                "sw": {
+                    "id": "1hyZWCHlOMQEOB_NakmY_xGtT5Nvx_Agb",
+                    "originalsize": "6812604",
+                    "name": "s003-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1mvwmkv98AbAbYSXWS7pBBDaem3UoiHGC",
+                    "originalsize": "7379055",
+                    "name": "s003-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1-940hgEV1jq-ZH8qAO6-XtuAJqntxoDk",
+                    "originalsize": "7628702",
+                    "name": "s003-220514-s.jpg"
+                },
+                "nw": {
+                    "id": "14dUeTi8IEiqtzvCdzjOY0VwXoxsG61um",
+                    "originalsize": "6988888",
+                    "name": "s003-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1Esv5X1UuxdEJWrDYTXZEpE3rsYR7Vkak",
+                    "originalsize": "6608996",
+                    "name": "s003-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1G2Zjs0JEdMPgWGvu-y2nna2y6oe7zWpo",
+                    "originalsize": "6702715",
+                    "name": "s003-220514-n.jpg"
+                },
+                "e": {
+                    "id": "1oEtZrvG842W5qL4rCW4kBtfMzcqGcaQ3",
+                    "originalsize": "6942901",
+                    "name": "s003-220514-e.jpg"
+                }
+            }
+        }
+    },
+    "005": {
+        "longitude": "-123.5268476",
+        "latitude": "48.81843985",
+        "instances": {
+            "220606": {
+                "w": {
+                    "id": "1kEdxQ3lOxhzeiv0iJwGS6X_i5t_v1dZ4",
+                    "originalsize": "5379891",
+                    "name": "s005-220606-w.jpg"
+                },
+                "sw": {
+                    "id": "1F9QlH0pE1bPy7ADtBzp3uanZggjJGuMF",
+                    "originalsize": "6182615",
+                    "name": "s005-220606-sw.jpg"
+                },
+                "se": {
+                    "id": "1PnQtEog6pR0x3eD9SWUlk8S7keBB9-M5",
+                    "originalsize": "6502020",
+                    "name": "s005-220606-se.jpg"
+                },
+                "s": {
+                    "id": "1Jl2yC5aOztJJnKeUnypCsGHGtgAYUCSj",
+                    "originalsize": "5516722",
+                    "name": "s005-220606-s.jpg"
+                },
+                "nw": {
+                    "id": "1xk1xXVQFnyESw_e_ddfMCpAjUXvzWZpD",
+                    "originalsize": "6338227",
+                    "name": "s005-220606-nw.jpg"
+                },
+                "ne": {
+                    "id": "1_RqmZYN8tuD-1j9wWRC7jaS_8OHsBlrm",
+                    "originalsize": "5187364",
+                    "name": "s005-220606-ne.jpg"
+                },
+                "n": {
+                    "id": "1PN1ZqdH-O2JMxmEc1h6OxJIkkLz-aiiL",
+                    "originalsize": "6061163",
+                    "name": "s005-220606-n.jpg"
+                },
+                "e": {
+                    "id": "1K40_NxNVrq85VObqsFgbkvTvXHNWG-nC",
+                    "originalsize": "6903803",
+                    "name": "s005-220606-e.jpg"
+                }
+            },
+            "220512": {
+                "w": {
+                    "id": "1eSAtaNpT0whjTUssofalDhG1UGXhgrWl",
+                    "originalsize": "6784063",
+                    "name": "s005-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1jaj-UUVsm_0LYsUUUuhROytNHYihaJ4u",
+                    "originalsize": "7736742",
+                    "name": "s005-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "108RMGomsCCXH7IYWNvFfuxL1Zp2_2yZK",
+                    "originalsize": "7807733",
+                    "name": "s005-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1n4rrFAQAK4YqDDAiHDBqDBpRvK6-PbOo",
+                    "originalsize": "6612791",
+                    "name": "s005-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1Ztmtf2wlyH1ZidX0DtzXdHY26aiwJvmR",
+                    "originalsize": "7673373",
+                    "name": "s005-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1ILvSfTdyPVNZmhk548iOPwqEMhoA4Ib6",
+                    "originalsize": "7710609",
+                    "name": "s005-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1fcN0ujJvoNB1GaICEAIg3laW740oxCRC",
+                    "originalsize": "6831897",
+                    "name": "s005-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1gbKOR8HVLAT3Jgft0JP0GQbWYoUW0zIp",
+                    "originalsize": "5594729",
+                    "name": "s005-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1yTH-rXm3sNaolhanJXv_08UzD2bWFKwJ",
+                    "originalsize": "437655",
+                    "name": "s005-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "006": {
+        "longitude": "-123.5242322",
+        "latitude": "48.81203851",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1DA3cNIKFIs8qwDQGjON41xKftD7Ntlym",
+                    "originalsize": "5581713",
+                    "name": "s006-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1NJJIedwLeWzcA9M1fVZYAMud58C9czG-",
+                    "originalsize": "5693265",
+                    "name": "s006-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "10QKEzyp_ufgJajr3PQb9tVjb9SBnZlcl",
+                    "originalsize": "6082841",
+                    "name": "s006-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1CUUpJUoFEux5D00YN2nxDkw9AvT136Cq",
+                    "originalsize": "6002350",
+                    "name": "s006-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1-lry2hfSLUr088se8IPDwBa5ChHdiuXl",
+                    "originalsize": "6092577",
+                    "name": "s006-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1Nd0GUAmH41dRSiJWWnfg3pz5Y-DDNU20",
+                    "originalsize": "5930786",
+                    "name": "s006-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1cMKOR2EjkFxSfbthuNRS_0nIMRpEHLEg",
+                    "originalsize": "5966533",
+                    "name": "s006-220513-n.jpg"
+                },
+                "e": {
+                    "id": "19wsOWqAFVDPlXK791jWCT-gNrDdQbSNl",
+                    "originalsize": "5879999",
+                    "name": "s006-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1KeU1qOzergve4_fg_wqR4QqpA10QrPVn",
+                    "originalsize": "5837920",
+                    "name": "s006-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "007": {
+        "longitude": "-123.5345572",
+        "latitude": "48.82442893",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1zlpVdAVPpwRZdkkwnbl-U1unqJzlmpVR",
+                    "originalsize": "6131977",
+                    "name": "s007-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1GnHegjvCaYs8gUpkcBvyu1mxsw_AYtiT",
+                    "originalsize": "6174722",
+                    "name": "s007-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "1S-iyZgG60ctwv3qaYMMH4hPE58ubCXXt",
+                    "originalsize": "5924711",
+                    "name": "s007-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1BCfTFV19L_W6369ttTwfnHxnL43TmEjZ",
+                    "originalsize": "6543427",
+                    "name": "s007-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1l2wBQIt2wEEO8tEc2aUACKGSsoIwaJl2",
+                    "originalsize": "6280867",
+                    "name": "s007-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1EiEJ_-i0nXdV6lO5MekMRCEr_BFOMr1T",
+                    "originalsize": "5893020",
+                    "name": "s007-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1O0H8mecsefDMGnzPHqzXfqKfyL2_Dwq1",
+                    "originalsize": "6756168",
+                    "name": "s007-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1UFWLRKxw7QYpolXNc62e2dCLf1lXwWnz",
+                    "originalsize": "5979487",
+                    "name": "s007-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1j4ZiM97R_osyKBRSKxG3iYe2EcYm7Slb",
+                    "originalsize": "2378856",
+                    "name": "s007-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "008": {
+        "longitude": "-123.5459609",
+        "latitude": "48.82612455",
+        "instances": []
+    },
+    "011": {
+        "longitude": "-123.5287308",
+        "latitude": "48.81979161",
+        "instances": {
+            "220605": {
+                "se": {
+                    "id": "13B-1exrIT-rk8c7DUNDIY4D_5RtWwcvO",
+                    "originalsize": "5714854",
+                    "name": "s011-220605-se.jpg"
+                },
+                "sw": {
+                    "id": "1LkhJaMn0dRg5L0muPQAcLECoRM3rmz6a",
+                    "originalsize": "6205465",
+                    "name": "s011-220605-sw.jpg"
+                },
+                "w": {
+                    "id": "1Sn9BVZBQtiFx9HCr_kvPnMOJat4wJcxC",
+                    "originalsize": "6592918",
+                    "name": "s011-220605-w.jpg"
+                },
+                "s": {
+                    "id": "1ZKLDb1psXUD7WWH6uuSxw6ZlskCpSJSd",
+                    "originalsize": "5489618",
+                    "name": "s011-220605-s.jpg"
+                },
+                "nw": {
+                    "id": "1WopWbEl6pNVjbPxjl2rr5lgKvsysF8rb",
+                    "originalsize": "5776577",
+                    "name": "s011-220605-nw.jpg"
+                },
+                "ne": {
+                    "id": "13DgNmF6yAcA-iQWYPUroO78bgDnXKLyB",
+                    "originalsize": "5255878",
+                    "name": "s011-220605-ne.jpg"
+                },
+                "n": {
+                    "id": "17II483LSJycLYwjcv6Lmyj4neCEmHN38",
+                    "originalsize": "5855726",
+                    "name": "s011-220605-n.jpg"
+                },
+                "e": {
+                    "id": "1K2KdFIFmnrTBYI40zV9Ax6Ip_OCHgvt1",
+                    "originalsize": "4701454",
+                    "name": "s011-220605-e.jpg"
+                }
+            },
+            "220512": {
+                "w": {
+                    "id": "1A9y--_6tpJVG0dlvRKUk-NkTK7-uEAuq",
+                    "originalsize": "4681556",
+                    "name": "s011-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1W4rBRsu_eZqlwIOnHgNIiB1ncm85elXn",
+                    "originalsize": "4639038",
+                    "name": "s011-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "1Ui5ATkPTX0E954oO07j1_iS_YMn_gQk4",
+                    "originalsize": "4821494",
+                    "name": "s011-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1GaQpBzeOT00Nz5rHLC_OgyWZ2R4Y-IAo",
+                    "originalsize": "5355492",
+                    "name": "s011-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1RyayXSdQw8AnjSzR4z1Zgv1Dq27bLigO",
+                    "originalsize": "4482802",
+                    "name": "s011-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1ETYNH7nC3ZZuFLbj8o3AO9VTcvTk5TnX",
+                    "originalsize": "4305071",
+                    "name": "s011-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1UmmhiIAAO919RAOKSPFhYZPycT6oOLs-",
+                    "originalsize": "4704017",
+                    "name": "s011-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1Lv7GmzRzBWJA6VeAey9Ect3Bp1X5ltWh",
+                    "originalsize": "4770069",
+                    "name": "s011-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1Jz8dXDaVVraBmrbEnEmGaxpO6VC00MJA",
+                    "originalsize": "4985372",
+                    "name": "s011-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "012": {
+        "longitude": "-123.5373898",
+        "latitude": "48.81916855",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1B1-XGopqFG86OhZMdtVo-N397wSTDTQM",
+                    "originalsize": "6667805",
+                    "name": "s012-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1F-eW9__c_6ZNldfNYmHv6y7m6wc4b6r0",
+                    "originalsize": "6812778",
+                    "name": "s012-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1Fr9R-bEydXrsLXfT7pwhkantqBvD19ff",
+                    "originalsize": "6874739",
+                    "name": "s012-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1qoupHRZkS_LzsG-3o4404FiCrzj-IjEt",
+                    "originalsize": "7147169",
+                    "name": "s012-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1nCXvBl8ks5AjwUgLzPui6ectfBY8t8dL",
+                    "originalsize": "6974470",
+                    "name": "s012-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1aY5w5vStw8QWE_8Qqvy8NV2JUfair4Xe",
+                    "originalsize": "6771893",
+                    "name": "s012-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "14g4R-Jx5WE8zqJHosFuWKgH5zynfYORD",
+                    "originalsize": "7202344",
+                    "name": "s012-220513-n.jpg"
+                },
+                "e": {
+                    "id": "10OexYeD892mjWGFwBJBphX3YwnzgdBjE",
+                    "originalsize": "7114077",
+                    "name": "s012-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1lgdcoBMyl65EoiOfOf3EIRvmRFzR_o27",
+                    "originalsize": "537014",
+                    "name": "s012-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "014": {
+        "longitude": "-123.5212066",
+        "latitude": "48.81516169",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1oPw1ZcKj--GkGyrHjxeSIvnzSai5WCEy",
+                    "originalsize": "4841331",
+                    "name": "s014-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1ROiyoT_u9kEBshyOoaxTbUdW1_BE7V0_",
+                    "originalsize": "4918638",
+                    "name": "s014-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1uGNHNIyzOM1M0gpV4l0DgNs7tAuavFK_",
+                    "originalsize": "5097581",
+                    "name": "s014-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1EAyneQabf1jcbYK06EcthBU2vNqDZboV",
+                    "originalsize": "5023152",
+                    "name": "s014-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1gryTancrOmdFXbke2e53uzyWFzDUQFDd",
+                    "originalsize": "5024270",
+                    "name": "s014-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1Z36sCuaOskasNpG9iC8wjzf0bz74TtAU",
+                    "originalsize": "4733798",
+                    "name": "s014-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "18D_JRmhIlml8u0NjarOLVBkS23sYpsoN",
+                    "originalsize": "4790859",
+                    "name": "s014-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1yDYzeHRkfOKVuEeBBwUhfu3giE1_Baft",
+                    "originalsize": "4648006",
+                    "name": "s014-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1wgBX5KxsQtXv3lUi_ySR3j3fkOoS73C5",
+                    "originalsize": "3699037",
+                    "name": "s014-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "015": {
+        "longitude": "-123.5331525",
+        "latitude": "48.82015993",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1e_vReKZterdoaJrEIkXecy5zCSvCV34P",
+                    "originalsize": "5875298",
+                    "name": "s015-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1E2ZFkrVhjGF2FpHUdD4RYKG2aBpcAHOn",
+                    "originalsize": "6295685",
+                    "name": "s015-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "15pV69IWjo_Be2O6VV8q4MDpXZUYTu2oq",
+                    "originalsize": "5676982",
+                    "name": "s015-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1MyLAaO2_jSCg8gCd3A-H31QC6S3KusSC",
+                    "originalsize": "6433784",
+                    "name": "s015-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1oXSHn8rtVrrYguJBTz_jKFgE-dMsgsr8",
+                    "originalsize": "5727018",
+                    "name": "s015-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1sTDJJ23-v9IeR6NvMWr1hqgt9SHgYh4X",
+                    "originalsize": "5791639",
+                    "name": "s015-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1THcw41LXDNa9sf9jE7s7XsPNAcTmraOk",
+                    "originalsize": "6286954",
+                    "name": "s015-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1qFalCu1eFjQmUsOJQ3WeqIOMhy2AZZLI",
+                    "originalsize": "6231425",
+                    "name": "s015-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "199_HxrzQzf8yFh7NX-ma_A4xNQgZQTnf",
+                    "originalsize": "2522195",
+                    "name": "s015-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "100": {
+        "longitude": "-123.545298",
+        "latitude": "48.82768242",
+        "instances": []
+    },
+    "103": {
+        "longitude": "-123.5308016",
+        "latitude": "48.82157168",
+        "instances": {
+            "220514": {
+                "w": {
+                    "id": "1Fgzlrjz541b4UIh8g_YnLFzSdKIi9oAx",
+                    "originalsize": "6943096",
+                    "name": "s103-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1Ey6pwyFvTX1kzKW3jOk7Ks_2VPCgz94z",
+                    "originalsize": "7136238",
+                    "name": "s103-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "19grvJu1KpLjYno2j9VzJF4im0dnxwFfJ",
+                    "originalsize": "7434541",
+                    "name": "s103-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1qH0mNk1atfGMbc9vs0fV0144jpq_0V5c",
+                    "originalsize": "6818252",
+                    "name": "s103-220514-s.jpg"
+                },
+                "canopy": {
+                    "id": "1GOXDHk0Rssrq9iaI9QpGPEqLt5H7vgoF",
+                    "originalsize": "5789109",
+                    "name": "s103-220514-canopy.jpg"
+                },
+                "nw": {
+                    "id": "1uddJSqmhVXDQMncDxWaQ_SXICiF6H8hc",
+                    "originalsize": "6716152",
+                    "name": "s103-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1Wuie7H9hmssCXshMms9cvS4HX-fkPLqt",
+                    "originalsize": "4820332",
+                    "name": "s103-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1ZXx2KJHLfRlMUUAN2O3ooe8ZSYEpTbkr",
+                    "originalsize": "6522539",
+                    "name": "s103-220514-n.jpg"
+                },
+                "e": {
+                    "id": "1esozfaKM6awVnV2LM4SEasbzlfw5EtZu",
+                    "originalsize": "6594358",
+                    "name": "s103-220514-e.jpg"
+                }
+            }
+        }
+    },
+    "104": {
+        "longitude": "-123.5203909",
+        "latitude": "48.8109094",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1KtTDiGwte8VSxkhz0QFqtG0XMj6AQGtd",
+                    "originalsize": "5638401",
+                    "name": "s104-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1N3IwxhpCBTZ55LfHqvCaHM1DDfrYSYwg",
+                    "originalsize": "4972402",
+                    "name": "s104-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1zTB7TPqMz4dY8qEaM8P-2M8hXxdNT6Or",
+                    "originalsize": "5083059",
+                    "name": "s104-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1KFggwlNjWLSq2zS9vnMR_Pc66zmAv_1r",
+                    "originalsize": "5676832",
+                    "name": "s104-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1y5mA_pELcvswaoQzinDgHwg7m1SFBHxx",
+                    "originalsize": "5864901",
+                    "name": "s104-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "13z67hQBZTgnOfARwyUFannaO34bWDgGn",
+                    "originalsize": "5433765",
+                    "name": "s104-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1w4-Y08bjvR0txHLPIQzAiYM8Cjyo4Zun",
+                    "originalsize": "5802441",
+                    "name": "s104-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1KfsvEkaUNNSS6rxo5aCJHHXFSWCzDWNd",
+                    "originalsize": "5338344",
+                    "name": "s104-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "11eoOST1_aeLtasZEsEdHiaGBN5U8uqHX",
+                    "originalsize": "5277287",
+                    "name": "s104-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "106": {
+        "longitude": "-123.5241092",
+        "latitude": "48.81959422",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1FdX9czX4CasoNB_4Q7Xy44rVaYDU0b2q",
+                    "originalsize": "5746080",
+                    "name": "s106-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1LXOm7UhSpICOB9pmOzrmr0SCisjzW2p3",
+                    "originalsize": "5301023",
+                    "name": "s106-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "1tfjNcQHex-sA-k90XNgpL38SGN-pAjTr",
+                    "originalsize": "6169877",
+                    "name": "s106-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1XA8ivRZFOsSpnxPMOrxta9YDaEYxR_Zv",
+                    "originalsize": "6169528",
+                    "name": "s106-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1BG-JpbBTrVItyrvxdKGqx3TLENLXDDxu",
+                    "originalsize": "5038716",
+                    "name": "s106-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1zNvUPAR3ogi9zB_U9wbKaLBSJ1qgAq9f",
+                    "originalsize": "5687636",
+                    "name": "s106-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1_q881SXr-pZXKATCwHb3R28B4trUI4I5",
+                    "originalsize": "5572428",
+                    "name": "s106-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1K_cDgRRd6MxpWQ_e1RspWTe9w9CB4xZm",
+                    "originalsize": "5053510",
+                    "name": "s106-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "13vXswEN-P6rGdABfKQhggs0KicPESzE8",
+                    "originalsize": "4921813",
+                    "name": "s106-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "107": {
+        "longitude": "-123.5296904",
+        "latitude": "48.81608805",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1m4qtrEqD7U5nxADvlzieiaUSW66DAOOQ",
+                    "originalsize": "5085756",
+                    "name": "s107-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1bSQ5SMAkkKVADOeuJkwc7R1lyCwKYYEH",
+                    "originalsize": "5420346",
+                    "name": "s107-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "1fMpqB8D0v33VNYK3gJfgknU39VBINyjp",
+                    "originalsize": "5462415",
+                    "name": "s107-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1abWGnLzIAJfpa4sVQcuX3uPrRLFVhLlJ",
+                    "originalsize": "5490800",
+                    "name": "s107-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "16IWTt71CWQjfi3uXfc2Ynol6HdEiv_ep",
+                    "originalsize": "5079474",
+                    "name": "s107-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1ERHuQ8Tup5sJQerpVHTZTxsKWjF89YV2",
+                    "originalsize": "5317381",
+                    "name": "s107-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1fnJjoGBLVvcxXYoM6fAXBU7KjPHcJVWm",
+                    "originalsize": "5177891",
+                    "name": "s107-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1cRivxr_2Mo_wI7tEJujEFoB-wggM-pDT",
+                    "originalsize": "5451369",
+                    "name": "s107-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1taAH8ei6Ia8Qk3HQV7c651jejLO1VUMg",
+                    "originalsize": "5185153",
+                    "name": "s107-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "109": {
+        "longitude": "-123.5472634",
+        "latitude": "48.82845603",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1qMOo9wmjxa_5DB6P6i0LQK2QbHfdPcGU",
+                    "originalsize": "2997128",
+                    "name": "s109-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "14sNrzIL2tVoVls1Jj5j7ePAqjO3YWqRG",
+                    "originalsize": "3004246",
+                    "name": "s109-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "144Kb_Cho4fslnsc6zl3MQvm8EYQ4u3OC",
+                    "originalsize": "3020992",
+                    "name": "s109-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1LyGeHxLq_agFH2AhDnCJYCVy8oBhlJHg",
+                    "originalsize": "3019466",
+                    "name": "s109-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1xv9TE7DFtWKs0vp7EzADQPbkDF3DSz2O",
+                    "originalsize": "3029454",
+                    "name": "s109-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1bwG_0oo5QYs68ut5_fGZIR7j15zS7ZwF",
+                    "originalsize": "3015871",
+                    "name": "s109-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1MYxNHZY-IF--pxy6corRT5HU-UqXS_Q5",
+                    "originalsize": "3004494",
+                    "name": "s109-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1UTD7FXrXhGidwMVvEU45-Nn2oBvWosWv",
+                    "originalsize": "3014368",
+                    "name": "s109-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1bbQ3H42Mz-cm5wJA8n3mG9U60s8_WbUa",
+                    "originalsize": "2978598",
+                    "name": "s109-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "110": {
+        "longitude": "-123.5320962",
+        "latitude": "48.82223507",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1HhqX5nmBi-PMTq1qL64pVykPOtR5rsar",
+                    "originalsize": "6473565",
+                    "name": "s110-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1bAjXmJnKkkSHbVTiOK-qX8zvWs1f1qzz",
+                    "originalsize": "6462148",
+                    "name": "s110-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "1FVIv4leSMH7TelCs8W7DR9JA1aP7pLot",
+                    "originalsize": "6473223",
+                    "name": "s110-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1vHdaOpqp4c5OX24fFYxqpqBDHlUzicIB",
+                    "originalsize": "7017907",
+                    "name": "s110-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1XaJC4QQzAhoBkFr8Qw9TCfmHFCoHRPT7",
+                    "originalsize": "6545332",
+                    "name": "s110-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1RiKQrh-MddpF1VnIcY1m1QRxohstEBqx",
+                    "originalsize": "6388795",
+                    "name": "s110-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1dwYTZBL3WeWzAJQLHbkcbBldyIX7kw6L",
+                    "originalsize": "6253256",
+                    "name": "s110-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1KR6srLetTJyw4O8uEM1xJzc44CUyBplP",
+                    "originalsize": "6117289",
+                    "name": "s110-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1Mvdz9JrdQwla4P_sZYdE2Wl8zSvgYxuq",
+                    "originalsize": "2385578",
+                    "name": "s110-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "111": {
+        "longitude": "-123.5282776",
+        "latitude": "48.8152913",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1z-J5po1yQ69MBarE4b1PCA_y5-WLz2dL",
+                    "originalsize": "5944093",
+                    "name": "s111-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1WsmatnsT_zikBb50jpD0mdFdcNtycQd4",
+                    "originalsize": "5506600",
+                    "name": "s111-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1snbXDYIGKFlvT_LG6wVWDqSKUkHMFvzu",
+                    "originalsize": "5064589",
+                    "name": "s111-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1J9Nhl_ral-sygtro4CuBl5UDbF3N34PJ",
+                    "originalsize": "5264521",
+                    "name": "s111-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1bimhVi41aGacRz3nroCIv2kVQV5T8FfC",
+                    "originalsize": "5671107",
+                    "name": "s111-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1v1UNWzJy-WABqFXqp-YRJDMy607II02D",
+                    "originalsize": "5874096",
+                    "name": "s111-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1JnIoTjcGwdEW3tuOrUK2dZ6NsPtY2dOu",
+                    "originalsize": "5522500",
+                    "name": "s111-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1GpJk7TfoQHh0s5TlGPonWXLGqivLDgrq",
+                    "originalsize": "5207126",
+                    "name": "s111-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1IAT979KWPs07smPNyI-TzLXINmOIm2GC",
+                    "originalsize": "5626861",
+                    "name": "s111-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "112": {
+        "longitude": "-123.5191162",
+        "latitude": "48.81211999",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1nuvrRKwPvK6qSI3T7KqokKXbluQL8kRX",
+                    "originalsize": "5106103",
+                    "name": "s112-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1YEG7I8cVzVW7fhwgcGPO6cbrGt8CKRF0",
+                    "originalsize": "4696845",
+                    "name": "s112-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1SCmrb8W3kLEOyrb1ncklxGKrpky45kWR",
+                    "originalsize": "5647383",
+                    "name": "s112-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1PbPAKM8gvzqqNKDnkl5e0Nig726MCycB",
+                    "originalsize": "4726921",
+                    "name": "s112-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "12XsmEcULpcmWk4hnceo0F1DAxyXYXaBQ",
+                    "originalsize": "5632124",
+                    "name": "s112-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "19BxvTB_ILMtWT08Twn1C74v6drJicBi_",
+                    "originalsize": "5600117",
+                    "name": "s112-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1pyj2pHlyG9pKhkua2eCuCbr364RGpA-q",
+                    "originalsize": "6122082",
+                    "name": "s112-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1D8Jkh4Fd56lkF3WgTmKOdjdrHc5fR36l",
+                    "originalsize": "5044644",
+                    "name": "s112-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1zOJd5IbEx8ziMXxTj933TWs2ICUBFfm4",
+                    "originalsize": "6413298",
+                    "name": "s112-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "114": {
+        "longitude": "-123.5353563",
+        "latitude": "48.82061351",
+        "instances": {
+            "220514": {
+                "sw": {
+                    "id": "1xnbBa-EQD0Tp3kf1TgwqMMyIsJgANz6Z",
+                    "originalsize": "5999444",
+                    "name": "s114-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1KRZ8rb0a6Y0GAI2u3YZKlKhX52FGNDJF",
+                    "originalsize": "6517763",
+                    "name": "s114-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1oUSCazgUDonneRZArb1M55jCuxVkKqCA",
+                    "originalsize": "6532974",
+                    "name": "s114-220514-s.jpg"
+                },
+                "ne": {
+                    "id": "1nTfFNxvluUEDJw8UClk_pEgdVmWSB9W2",
+                    "originalsize": "6671446",
+                    "name": "s114-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1Hi338F3tCQTatQRV2jqPq-NIBlF2GHAe",
+                    "originalsize": "6855614",
+                    "name": "s114-220514-n.jpg"
+                },
+                "e": {
+                    "id": "10MxyfmJoKHrA6Y0pVYbrXzFrBDDoer8j",
+                    "originalsize": "6302561",
+                    "name": "s114-220514-e.jpg"
+                },
+                "canopy": {
+                    "id": "1AickIsfKJFEDjPu9vxahfBwuT_eVZIAT",
+                    "originalsize": "6096683",
+                    "name": "s114-220514-canopy.jpg"
+                }
+            }
+        }
+    },
+    "200": {
+        "longitude": "-123.5191631",
+        "latitude": "48.81667143",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1BBUAfDF8FUQoBJc4WUD40GDQa2WeX4vj",
+                    "originalsize": "4589438",
+                    "name": "s200-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1w6egWpg9JIBMIdmr3oaues9ZWPyyfEm1",
+                    "originalsize": "3411739",
+                    "name": "s200-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1rvYwloQ8ZM6HxEs3NEUttcIWK0loCywr",
+                    "originalsize": "4355446",
+                    "name": "s200-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1aUFMnAbTzLXPOrkxzTScudtHU3nYaUEB",
+                    "originalsize": "4509575",
+                    "name": "s200-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1i5xFkKqlQ1pjSugOhDqYHHYl7F7JReLk",
+                    "originalsize": "4619737",
+                    "name": "s200-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1M91acjOZWSawsTNFhfAeZuHOh5Yqthzo",
+                    "originalsize": "4806203",
+                    "name": "s200-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1kIQkWGaP9bFAK5bfzg9Syk7yyKmT35LT",
+                    "originalsize": "4673235",
+                    "name": "s200-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1bS0oAIV3Qki4SHRcyef7I8v9STJJBy-F",
+                    "originalsize": "4554413",
+                    "name": "s200-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1GJusG8rt6VSmKyH0Xf9rYh1jp1wCD_Bd",
+                    "originalsize": "3803909",
+                    "name": "s200-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "201": {
+        "longitude": "-123.5297701",
+        "latitude": "48.82041165",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1g69IoaLuUWB2tJAUtUoX5t3PcTha-AZI",
+                    "originalsize": "6134604",
+                    "name": "s201-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1Jd7eWn7U7cp9I--2L6Gn_-jkTPEWcs4j",
+                    "originalsize": "5848947",
+                    "name": "s201-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "13Dyf4sAOR_oDZhSp7S3do9nPJ4u5gfen",
+                    "originalsize": "6259532",
+                    "name": "s201-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1E2vHfWUVcGHE2MsoqKZaDh9GOtYm9zv7",
+                    "originalsize": "6326900",
+                    "name": "s201-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1j4wwL3fp0p6nxC4AsGk4XQsSLcZP-9Vh",
+                    "originalsize": "6846309",
+                    "name": "s201-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1f3S9H8tUJXDm51VxMy7gMXHz4p-NdkWu",
+                    "originalsize": "6171660",
+                    "name": "s201-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1wqOz-Ase3dWaca4kSkxb8IohvrJCbI75",
+                    "originalsize": "6244665",
+                    "name": "s201-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1xmtkpRXl2BXgcpxkDC5XZQp8u9SjO7pC",
+                    "originalsize": "6372585",
+                    "name": "s201-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1kHkb6bVyFJWElxspjV_yGfHGrfizFsID",
+                    "originalsize": "449206",
+                    "name": "s201-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "202": {
+        "longitude": "-123.5201641",
+        "latitude": "48.81591686",
+        "instances": {
+            "220513": {
+                "ne": {
+                    "id": "1smAniSaBm26_ISJRorSlStBm52_DiJWa",
+                    "originalsize": "5093755",
+                    "name": "s202-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1KhWsOaJhgPV-fFb_THUQAqkBvx1bQff2",
+                    "originalsize": "5153755",
+                    "name": "s202-220513-n.jpg"
+                },
+                "canopy": {
+                    "id": "1Brfz0nQvVwvUwAqXmx_s3r3gkhv2dRYO",
+                    "originalsize": "3264988",
+                    "name": "s202-220513-canopy.jpg"
+                },
+                "w": {
+                    "id": "1BpHxhw8uKbduEG_ph46IiJPGHdJxG0kz",
+                    "originalsize": "4664693",
+                    "name": "s202-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1mikVnyjfBt1spYH-JvTEHjiEZ5uaxbvq",
+                    "originalsize": "4599742",
+                    "name": "s202-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1amdjF71Q-9Rs5HdNUqeCyNLmyZEzx8kY",
+                    "originalsize": "4715047",
+                    "name": "s202-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1fiZIq2VpAnbh5qsznieZ5350BLYqIxp8",
+                    "originalsize": "4879403",
+                    "name": "s202-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1r27JWAb6j6Yf4Km5lr_-RmDUAxv7Nuhq",
+                    "originalsize": "4960078",
+                    "name": "s202-220513-nw.jpg"
+                },
+                "e": {
+                    "id": "1rBJWT11DtKQVP88kKR09nNtQFHW2Deuf",
+                    "originalsize": "4861123",
+                    "name": "s202-220513-e.jpg"
+                }
+            }
+        }
+    },
+    "203": {
+        "longitude": "-123.5251771",
+        "latitude": "48.81238708",
+        "instances": {
+            "220515": {
+                "se": {
+                    "id": "1M77DT2-9RCAp2X4JrZnsXUmBNjHH6l4h",
+                    "originalsize": "6279523",
+                    "name": "s203-220515-se.jpg"
+                },
+                "s": {
+                    "id": "18uFFVPEfF6fLAOlkiRakIXMWucv-2Yl9",
+                    "originalsize": "7219097",
+                    "name": "s203-220515-s.jpg"
+                },
+                "nw": {
+                    "id": "1p9LT_sOwooyrFdC6FD0LrA-SA9mbEQpW",
+                    "originalsize": "6640349",
+                    "name": "s203-220515-nw.jpg"
+                },
+                "ne": {
+                    "id": "1RtH7fOtvjMnPSBpe01OzR5o2fqZTvQ0t",
+                    "originalsize": "6292060",
+                    "name": "s203-220515-ne.jpg"
+                },
+                "n": {
+                    "id": "15OdeSA6JXXgQVat8Ix2L0cymPhHhd9df",
+                    "originalsize": "6624472",
+                    "name": "s203-220515-n.jpg"
+                },
+                "e": {
+                    "id": "1IQVQnnoDkHK-7nWxIYwpnBj9qxI6sZIX",
+                    "originalsize": "6026691",
+                    "name": "s203-220515-e.jpg"
+                },
+                "w": {
+                    "id": "1qHZFP5rNDjBXSphOuOhONI3vkPoerHI_",
+                    "originalsize": "6920325",
+                    "name": "s203-220515-w.jpg"
+                },
+                "sw": {
+                    "id": "16JoPn9GDorJVTNmUhKlEyjwYpNkKitHC",
+                    "originalsize": "6622947",
+                    "name": "s203-220515-sw.jpg"
+                },
+                "canopy": {
+                    "id": "1uRlbXMC0fxpW5q_OvRZaItQga3lGR_ul",
+                    "originalsize": "2534365",
+                    "name": "s203-220515-canopy.jpg"
+                }
+            }
+        }
+    },
+    "204": {
+        "longitude": "-123.543727",
+        "latitude": "48.82674187",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1Pto-xVqcEEmPIAt9I7PE8O1w6gIZzM1r",
+                    "originalsize": "3112621",
+                    "name": "s204-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1IXbxbJ45ehxRvvevTTkhH2EoUJ2jTx2u",
+                    "originalsize": "3027644",
+                    "name": "s204-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1LrIOMrwfBxGphfvwfD1tFkhr0St97unI",
+                    "originalsize": "2993798",
+                    "name": "s204-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1DKeZBpYXzlSmA81Q9G2klLS06_EJy5AC",
+                    "originalsize": "3110676",
+                    "name": "s204-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1QPzi1IJYUn3Llsfs4uRfLo517gN2ys_Y",
+                    "originalsize": "2992844",
+                    "name": "s204-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1TQVHYxA8zORS43qxnBdlhaf65Tqx5NKu",
+                    "originalsize": "3146795",
+                    "name": "s204-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1mOJn22KGz0ZXxPRXpKNeyVHN-Ig3TaXQ",
+                    "originalsize": "3046133",
+                    "name": "s204-220513-n.jpg"
+                },
+                "e": {
+                    "id": "18-XNJGIVpqUHsffR7glrkakDsUW_h5-c",
+                    "originalsize": "3031202",
+                    "name": "s204-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1TR0DrsG-IDQa3wymaSGhRo-2jKEEBPv1",
+                    "originalsize": "2994982",
+                    "name": "s204-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "206": {
+        "longitude": "-123.5216239",
+        "latitude": "48.81756064",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1Zk31Tmq6WgZ_2EuXldN-3KfbNx9wgU1x",
+                    "originalsize": "6212516",
+                    "name": "s206-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "1COevdxrFHUEYdj7TgU11KdgUY4T8Rhqg",
+                    "originalsize": "6868972",
+                    "name": "s206-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "10F9sKc35h2JCxiEtpVIKNACWE_oUmh6a",
+                    "originalsize": "6695560",
+                    "name": "s206-220512-se.jpg"
+                },
+                "s": {
+                    "id": "16MvTnLJvvCsVDzTKQq_qLM5BN-hjoDa1",
+                    "originalsize": "6419688",
+                    "name": "s206-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1S5e-9dCcpWHrv8-LQ9c9_b1_7Js9ylgS",
+                    "originalsize": "6134711",
+                    "name": "s206-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1rK8mnOYtwexnbQyzB540I7SyIXbQJuwP",
+                    "originalsize": "6441311",
+                    "name": "s206-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1VDbQuxnSsBgsI7wZt6Oh4Y0m2qHD1px-",
+                    "originalsize": "6677518",
+                    "name": "s206-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1vlM1uGrqVYsIcO4Yq8uhzlI6Cqr4MnYY",
+                    "originalsize": "6378047",
+                    "name": "s206-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1NrJh0iqUTCC_lSuToO6tn0gOPfvlJOAL",
+                    "originalsize": "4919104",
+                    "name": "s206-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "213": {
+        "longitude": "-123.5384944",
+        "latitude": "48.81820511",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1xhVbtNli8Y8NUlVT3IcoF5M3tbr4W18r",
+                    "originalsize": "7930842",
+                    "name": "s213-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "17TAW5bkFn_mYg65cbiZXqFF0O9sVamYe",
+                    "originalsize": "6828943",
+                    "name": "s213-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1BZYts0ksr6wp03hUqx-CSFZ-n377mqa1",
+                    "originalsize": "8540623",
+                    "name": "s213-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1hHW6XUjbcSI_74gV__N2-h7b9tf86MV2",
+                    "originalsize": "7396606",
+                    "name": "s213-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1Xxwv8zcFARvH1eimSvYpsNRaNoi8h2E0",
+                    "originalsize": "6965540",
+                    "name": "s213-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1RZICnxz00u4aV2hQtd1AjK9_YJNAa0iy",
+                    "originalsize": "8270054",
+                    "name": "s213-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1E9vYkW0nlVU9ItTHku5UShqAM2U8dW_c",
+                    "originalsize": "7712171",
+                    "name": "s213-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1cyvEftgGBGlvWo6jRC3wg2fRnoH0deZK",
+                    "originalsize": "8575785",
+                    "name": "s213-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1U9xJ1zKX0C-tcw2NXksKrh1KRCmLp8PJ",
+                    "originalsize": "2635710",
+                    "name": "s213-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "214": {
+        "longitude": "-123.5296549",
+        "latitude": "48.81803976",
+        "instances": {
+            "220512": {
+                "w": {
+                    "id": "1OdOUg4C6hXBAzZ0Rofp975zy63ludScu",
+                    "originalsize": "6166026",
+                    "name": "s214-220512-w.jpg"
+                },
+                "sw": {
+                    "id": "10yrY0V7-N0arKqURRZuUbDWzM0WbuJok",
+                    "originalsize": "5935573",
+                    "name": "s214-220512-sw.jpg"
+                },
+                "se": {
+                    "id": "1mnKPTDgpOFEV6IE5sA7nCQ0i1zfBNcpq",
+                    "originalsize": "6440246",
+                    "name": "s214-220512-se.jpg"
+                },
+                "s": {
+                    "id": "1JUDpCVUiKtYTHGiVo9dsgtCj3X-QSofq",
+                    "originalsize": "6552608",
+                    "name": "s214-220512-s.jpg"
+                },
+                "nw": {
+                    "id": "1pflB34x_q9GLJ4u1-qNSz8wHrdzZf5oA",
+                    "originalsize": "5369836",
+                    "name": "s214-220512-nw.jpg"
+                },
+                "ne": {
+                    "id": "1nt2OxryJqEU9YDaieHQfmvKVkyy9D3w4",
+                    "originalsize": "5708213",
+                    "name": "s214-220512-ne.jpg"
+                },
+                "n": {
+                    "id": "1Wam-F0U6kkZ1y-1R3eSZJWTu3LTWRN5C",
+                    "originalsize": "5819524",
+                    "name": "s214-220512-n.jpg"
+                },
+                "e": {
+                    "id": "1JawYMP8AX0HwTgWQQu0peLaWFGckU2go",
+                    "originalsize": "5810955",
+                    "name": "s214-220512-e.jpg"
+                },
+                "canopy": {
+                    "id": "1g2YDRpRN0kFRD2mo3hK-a9M1oVQeS4Qr",
+                    "originalsize": "5139626",
+                    "name": "s214-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "215": {
+        "longitude": "-123.5425623",
+        "latitude": "48.8274694",
+        "instances": []
+    },
+    "220": {
+        "longitude": "-123.5406472",
+        "latitude": "48.82551858",
+        "instances": {
+            "220515": {
+                "canopy": {
+                    "id": "1DeyWZGIvw07FIGdec56GoZRMwFXve3SI",
+                    "originalsize": "3258953",
+                    "name": "s220-220515-canopy.jpg"
+                },
+                "w": {
+                    "id": "1IZ_M5yxkETTQ0OBfZdr9zhhlpDjXBXjl",
+                    "originalsize": "4806553",
+                    "name": "s220-220515-w.jpg"
+                },
+                "sw": {
+                    "id": "1akmNWs_C61cP0dpbX5nBv4TBvxUtktEt",
+                    "originalsize": "4532730",
+                    "name": "s220-220515-sw.jpg"
+                },
+                "se": {
+                    "id": "1qRfPYbXlFUfdF37Z9iZVORa2gVGVN-hJ",
+                    "originalsize": "4437639",
+                    "name": "s220-220515-se.jpg"
+                },
+                "s": {
+                    "id": "15jVMglaM5MOCy4YVCtX0weSQFt-Ab5XZ",
+                    "originalsize": "4155089",
+                    "name": "s220-220515-s.jpg"
+                },
+                "nw": {
+                    "id": "19oU7KeCjRcV_k0Y-iduXErFKusgYwsVz",
+                    "originalsize": "4800003",
+                    "name": "s220-220515-nw.jpg"
+                },
+                "ne": {
+                    "id": "1Qiws-UKD6r7m4wCigs9KWoUmrw1Ec_H7",
+                    "originalsize": "3789142",
+                    "name": "s220-220515-ne.jpg"
+                },
+                "n": {
+                    "id": "1isqJYrd6XHFHDLK1JfeIlEAFkBlI8YOv",
+                    "originalsize": "4716054",
+                    "name": "s220-220515-n.jpg"
+                },
+                "e": {
+                    "id": "17Relqr2H4AxmtFBKqXjsr9N7ULrdXbvH",
+                    "originalsize": "3891187",
+                    "name": "s220-220515-e.jpg"
+                }
+            }
+        }
+    },
+    "303": {
+        "longitude": "-123.5231941",
+        "latitude": "48.81124564",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1IZN3djohcmDRNxzsslKUN0ZNjcZVJa9Q",
+                    "originalsize": "5923193",
+                    "name": "s303-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "15hz5vZPvaiFi8ZgLGmyf-OS1t9o0gVaJ",
+                    "originalsize": "6119302",
+                    "name": "s303-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1wkZBnIxGzbTlKxwYP8kdN42EOCjRN8_u",
+                    "originalsize": "5804503",
+                    "name": "s303-220513-se.jpg"
+                },
+                "s": {
+                    "id": "15od-ODsa7lYv6sFtG14z6mgHMMk3wGw5",
+                    "originalsize": "6255583",
+                    "name": "s303-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1lsiwpgmPJIy6mpyIRhcLR7M13LtvZObi",
+                    "originalsize": "5944679",
+                    "name": "s303-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1uirk11zpdnAkCTMIM-VnLbm2epwMJros",
+                    "originalsize": "6273708",
+                    "name": "s303-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1gCHwKsMorVhn8CXHWqDzQ6hALDUwDenV",
+                    "originalsize": "6169886",
+                    "name": "s303-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1VPrPvWueF_2KQLV-cWznIDNeBTXPEFqI",
+                    "originalsize": "6383472",
+                    "name": "s303-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "13sPkKht-QnteNVKuGeQFsrR111el1dwE",
+                    "originalsize": "3672235",
+                    "name": "s303-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "305": {
+        "longitude": "-123.5322013",
+        "latitude": "48.82448629",
+        "instances": {
+            "220512": {
+                "canopy": {
+                    "id": "1g2JYotoH235iqTxWdaQpo6eg5LTH9ubQ",
+                    "originalsize": "2626262",
+                    "name": "s305-220512-canopy.jpg"
+                }
+            }
+        }
+    },
+    "307": {
+        "longitude": "-123.5179703",
+        "latitude": "48.80824298",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "1D-LOK4ETTrEa5qaBt9W6idjO8aSFv1af",
+                    "originalsize": "6838767",
+                    "name": "s307-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1yCpk3n5bvNwWalD8iM2gKCOqwSqiVyqi",
+                    "originalsize": "6835611",
+                    "name": "s307-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "1b6DeDVoOTv2Np2kUmwBaVo_LEq7JuSB4",
+                    "originalsize": "6284478",
+                    "name": "s307-220513-se.jpg"
+                },
+                "s": {
+                    "id": "1mEmG8DN04-OpuL-fpBPI9Rg7vS4OI-XY",
+                    "originalsize": "6793884",
+                    "name": "s307-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "1lOvAG9vRr3QIc96o4F2XY5mR-rLMlGy0",
+                    "originalsize": "6728192",
+                    "name": "s307-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1XqnN35xvWlOcLynBOuH2xhfQRSjJ8oRs",
+                    "originalsize": "6558691",
+                    "name": "s307-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "1kYaZV0aVdTKiuxRdPgbBkdUoJT4jmNmh",
+                    "originalsize": "6307869",
+                    "name": "s307-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1uM0uffPOZ97o-7J5mRUsC12OuT3CvOSK",
+                    "originalsize": "6309945",
+                    "name": "s307-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1cpPDn45pv_1RHznwUgKxZoYvXlD9tCq2",
+                    "originalsize": "5133152",
+                    "name": "s307-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "308": {
+        "longitude": "-123.5479926",
+        "latitude": "48.82564522",
+        "instances": {
+            "220514": {
+                "w": {
+                    "id": "1Dx9PBNd00g3zr4JaBsBqUYFOLICpNxZU",
+                    "originalsize": "7076301",
+                    "name": "s308-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1jyQUCbJ4EHQILIHIyKE2lmpJohxNHrEO",
+                    "originalsize": "7380751",
+                    "name": "s308-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1H068icZ7MBJBDBivzM01SRNjZ5pHetSz",
+                    "originalsize": "7106218",
+                    "name": "s308-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1wUtRZKQMyGLdAuwFlclQOv8GwxBpyu05",
+                    "originalsize": "7257377",
+                    "name": "s308-220514-s.jpg"
+                },
+                "nw": {
+                    "id": "1jlj_W9MBrDicQydXobvQD_i5WwVOJPI1",
+                    "originalsize": "6667550",
+                    "name": "s308-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1Kbjwr0qq4bktDz-hTw16jJQdvufMmklS",
+                    "originalsize": "7309754",
+                    "name": "s308-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1iBj5Pf1liTqRXu2zX2dS5Q0nNdmNf48j",
+                    "originalsize": "7137834",
+                    "name": "s308-220514-n.jpg"
+                },
+                "e": {
+                    "id": "1JfqDlD53RJvGWcyVwXjmjF8gnhJPxvQN",
+                    "originalsize": "7127416",
+                    "name": "s308-220514-e.jpg"
+                },
+                "canopy": {
+                    "id": "19juiTZ8DUu6OWKgoY_-NH9HgoV8C2u6r",
+                    "originalsize": "4570366",
+                    "name": "s308-220514-canopy.jpg"
+                }
+            }
+        }
+    },
+    "309": {
+        "longitude": "-123.5274265",
+        "latitude": "48.82243469",
+        "instances": {
+            "220513": {
+                "w": {
+                    "id": "16pWvYbwueR2PbDlOa7vcHbvBnGzSkQGk",
+                    "originalsize": "3013735",
+                    "name": "s309-220513-w.jpg"
+                },
+                "sw": {
+                    "id": "1L_rZVLCNVxuFPbs6ffTxV64gFtnd2OB7",
+                    "originalsize": "3022502",
+                    "name": "s309-220513-sw.jpg"
+                },
+                "se": {
+                    "id": "14IgahPWRB5y2kMr48W6IODNi8_CpIAwe",
+                    "originalsize": "3028946",
+                    "name": "s309-220513-se.jpg"
+                },
+                "s": {
+                    "id": "10rLNDsjxdCoMeFmWUxDpZgjdsf0PLagY",
+                    "originalsize": "3039324",
+                    "name": "s309-220513-s.jpg"
+                },
+                "nw": {
+                    "id": "11cEqIFb5eSq8S53G1zHWdPTtJSoNtN5T",
+                    "originalsize": "3009257",
+                    "name": "s309-220513-nw.jpg"
+                },
+                "ne": {
+                    "id": "1YgDVgX_JhE3yw8NpAy8oRT8507fLZImM",
+                    "originalsize": "3041659",
+                    "name": "s309-220513-ne.jpg"
+                },
+                "n": {
+                    "id": "12mfTSPz7L5Det7QuUa0kTNrTqK7iG06L",
+                    "originalsize": "3027152",
+                    "name": "s309-220513-n.jpg"
+                },
+                "e": {
+                    "id": "1eDy-Hrkl0RFtziKy3omsGQBDOAz_dD0B",
+                    "originalsize": "3041730",
+                    "name": "s309-220513-e.jpg"
+                },
+                "canopy": {
+                    "id": "1UtBvTKyl4xbfcBvM3jnOu5jBuTWssJ3u",
+                    "originalsize": "3057762",
+                    "name": "s309-220513-canopy.jpg"
+                }
+            }
+        }
+    },
+    "318": {
+        "longitude": "-123.5268896",
+        "latitude": "48.81795381",
+        "instances": {
+            "220514": {
+                "w": {
+                    "id": "19ZLAgvOXY7p3f91oLdmyLM44M49PMlZT",
+                    "originalsize": "6185684",
+                    "name": "s318-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "109Z8dWL1ld0cqAeJujjAv9uAVuBuYB7D",
+                    "originalsize": "6769201",
+                    "name": "s318-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1qS_h4ez1xg52dQuTq9-pMNZpa_BQe8GX",
+                    "originalsize": "6037759",
+                    "name": "s318-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1aaKt4jL5YtO9MaavNOE5JxL_YcDE83kZ",
+                    "originalsize": "6279513",
+                    "name": "s318-220514-s.jpg"
+                },
+                "nw": {
+                    "id": "1XgsKuOt-rgvywlroNd04ITYUCsrq4Mrh",
+                    "originalsize": "5901639",
+                    "name": "s318-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1aPqrfEBrkGpL0l_ktTvt50FCFHBMi8_d",
+                    "originalsize": "6645093",
+                    "name": "s318-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1s1qaUNG7qJNetSUeOZcoMAm8IkC7EzEl",
+                    "originalsize": "6866896",
+                    "name": "s318-220514-n.jpg"
+                },
+                "e": {
+                    "id": "11oyaPS8QVSIPWH0LZt4mbf0kKQHaHMXV",
+                    "originalsize": "6075921",
+                    "name": "s318-220514-e.jpg"
+                },
+                "canopy": {
+                    "id": "1wT_lMvN92PDtRfJ12sxPqdB2IngPywNH",
+                    "originalsize": "5537107",
+                    "name": "s318-220514-canopy.jpg"
+                }
+            }
+        }
+    },
+    "322": {
+        "longitude": "-123.5267857",
+        "latitude": "48.81739387",
+        "instances": {
+            "220606": {
+                "w": {
+                    "id": "1OjNzXqe3Kky9TECsTA-AzSKqtLgf3Fk_",
+                    "originalsize": "5698378",
+                    "name": "s322-220606-w.jpg"
+                },
+                "sw": {
+                    "id": "1yYQ_VYdRVSw8kjHL_Cxy-AeyHDbqaCoG",
+                    "originalsize": "6060895",
+                    "name": "s322-220606-sw.jpg"
+                },
+                "se": {
+                    "id": "1je7VhOXQfbdsEwA-MVUn3ewiLXkTj2NX",
+                    "originalsize": "5838918",
+                    "name": "s322-220606-se.jpg"
+                },
+                "s": {
+                    "id": "1MlRSfssfvRGPinj9P-uZo8_TLw4poL2n",
+                    "originalsize": "6077769",
+                    "name": "s322-220606-s.jpg"
+                },
+                "nw": {
+                    "id": "1oJI6HUOREjXoyY3rK7jIzelBrpA6Ak88",
+                    "originalsize": "5789862",
+                    "name": "s322-220606-nw.jpg"
+                },
+                "ne": {
+                    "id": "1418HEzwiWI8tX5sXmr3ulF5cxUFHOnqF",
+                    "originalsize": "6182624",
+                    "name": "s322-220606-ne.jpg"
+                },
+                "n": {
+                    "id": "1s0io-XyPAhuWEXh4UlLscU7_TyQNDu2Q",
+                    "originalsize": "6277013",
+                    "name": "s322-220606-n.jpg"
+                },
+                "e": {
+                    "id": "15Xyw5CGRNNpCw_K1PeAunj2po8ALGq_K",
+                    "originalsize": "5943318",
+                    "name": "s322-220606-e.jpg"
+                }
+            },
+            "220514": {
+                "w": {
+                    "id": "1eigfqYwpq26uu5fIrMYWtF--0NAtzzaM",
+                    "originalsize": "5929713",
+                    "name": "s322-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1Vbvx5a5qpU4ZQH-x1WLbVAjTHHiVTxqm",
+                    "originalsize": "6200419",
+                    "name": "s322-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1kJFiZEo-2guxD84JRytrZOJd1aZMWwAU",
+                    "originalsize": "6209011",
+                    "name": "s322-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1QtUPR48kEtcvZgDkGSSAwsO0MewECBc4",
+                    "originalsize": "6578895",
+                    "name": "s322-220514-s.jpg"
+                },
+                "nw": {
+                    "id": "1SRTLN04ELXWOE1fgmH1XLU6W5FhZ__kS",
+                    "originalsize": "5842929",
+                    "name": "s322-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1t98sLVIa_6EHyOrqv_U0EmFZcQShm2kj",
+                    "originalsize": "6580905",
+                    "name": "s322-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1q5yZYG7kRhEle5Xp-zIZOMO8sd8cBWWu",
+                    "originalsize": "6656805",
+                    "name": "s322-220514-n.jpg"
+                },
+                "e": {
+                    "id": "1DV6Ui-Hg6PyrwLszyIfFblyM7Sl1NGtu",
+                    "originalsize": "6699976",
+                    "name": "s322-220514-e.jpg"
+                },
+                "canopy": {
+                    "id": "1jPEyNg4pPGaDM5ohDJEGCe8rZlHnucWl",
+                    "originalsize": "414368",
+                    "name": "s322-220514-canopy.jpg"
+                }
+            }
+        }
+    },
+    "324": {
+        "longitude": "-123.5447998",
+        "latitude": "48.82947118",
+        "instances": {
+            "220514": {
+                "w": {
+                    "id": "1Ynp1-NaMD2cA_Ho5P2EgZWp72WCY8E3k",
+                    "originalsize": "6892456",
+                    "name": "s324-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1kQm5Cn4N3u6l3TJGtPIu-8N8vj6wDxCo",
+                    "originalsize": "6486489",
+                    "name": "s324-220514-sw.jpg"
+                },
+                "se": {
+                    "id": "1mGdVApcIMmq3OQFIwsR00glWIe_tyQdX",
+                    "originalsize": "6232567",
+                    "name": "s324-220514-se.jpg"
+                },
+                "s": {
+                    "id": "1mb-7KUbmb613v0S1-dXScjZDDKe6fkIJ",
+                    "originalsize": "6318653",
+                    "name": "s324-220514-s.jpg"
+                },
+                "nw": {
+                    "id": "1o3m5DAvWyBNYTuDoL4updGlB2U_HatHO",
+                    "originalsize": "6688436",
+                    "name": "s324-220514-nw.jpg"
+                },
+                "ne": {
+                    "id": "1HAwk1J013ZePLK5xVfY7v5gMXaGlnmZU",
+                    "originalsize": "5648407",
+                    "name": "s324-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1Nb69_gqT3kfh8qdWDCDHDnve19bnHeio",
+                    "originalsize": "5523890",
+                    "name": "s324-220514-n.jpg"
+                },
+                "e": {
+                    "id": "1DeLOFnvSSa0piQNREXoGArwlYrZ1JaDa",
+                    "originalsize": "6008962",
+                    "name": "s324-220514-e.jpg"
+                },
+                "canopy": {
+                    "id": "1hdYk37KiBG-Ghdey-Eyno5gGXYLumUym",
+                    "originalsize": "2399208",
+                    "name": "s324-220514-canopy.jpg"
+                }
+            }
+        }
+    },
+    "357": {
+        "longitude": "-123.5279992",
+        "latitude": "48.82097499",
+        "instances": {
+            "220605": {
+                "w": {
+                    "id": "1z5WoOUg8jGBc9RqYbf1j1nfKY0l8yTpl",
+                    "originalsize": "6337859",
+                    "name": "s357-220605-w.jpg"
+                },
+                "sw": {
+                    "id": "10yNoD2IqwH97El5f1ikJm2bgwGnbPeda",
+                    "originalsize": "6119884",
+                    "name": "s357-220605-sw.jpg"
+                },
+                "se": {
+                    "id": "1a7oAnppUIdfAkxD5Q5mIX3URmaLWuZsJ",
+                    "originalsize": "6206096",
+                    "name": "s357-220605-se.jpg"
+                },
+                "s": {
+                    "id": "1Ym9fyYoe1XznxapIuCjCUo9BkKaAYNe5",
+                    "originalsize": "6261902",
+                    "name": "s357-220605-s.jpg"
+                },
+                "nw": {
+                    "id": "1jeHH7tunlle1ud6ACaaGY5keUIXHNjyv",
+                    "originalsize": "6371785",
+                    "name": "s357-220605-nw.jpg"
+                },
+                "ne": {
+                    "id": "1-tWoOG1e1P2PCes1ok37NwWGTMi_pv1N",
+                    "originalsize": "6189535",
+                    "name": "s357-220605-ne.jpg"
+                },
+                "n": {
+                    "id": "14KifDVjCkeW92q40WhGbZzAHJf7CfS10",
+                    "originalsize": "6013263",
+                    "name": "s357-220605-n.jpg"
+                },
+                "e": {
+                    "id": "1puY3fikAztXtKjl8FXeSH-YUDhVuyQtR",
+                    "originalsize": "6196887",
+                    "name": "s357-220605-e.jpg"
+                }
+            },
+            "220514": {
+                "canopy": {
+                    "id": "1Mql8hrCDtFKbfim2FmC6hSybWrs1LsK5",
+                    "originalsize": "4347567",
+                    "name": "s357-220514-canopy.jpg"
+                },
+                "nw": {
+                    "id": "13tvkiayVLfHLUXM_oobzGkeNWbaPDEx_",
+                    "originalsize": "5258341",
+                    "name": "s357-220514-nw.jpg"
+                },
+                "w": {
+                    "id": "146GgzYiOqE_qBHFxco-HYBAZKwZMoVgy",
+                    "originalsize": "5231996",
+                    "name": "s357-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1OFn459PskDgoxNpaFZOcqfauZEVYTpJ7",
+                    "originalsize": "5183208",
+                    "name": "s357-220514-sw.jpg"
+                },
+                "s": {
+                    "id": "1Lodo0DAtWJknepHkz_UI_UNcbiabksL-",
+                    "originalsize": "5509241",
+                    "name": "s357-220514-s.jpg"
+                },
+                "se": {
+                    "id": "1kauxvo18jaStElUrM_o1Dtsc4ZpNtFpY",
+                    "originalsize": "5269101",
+                    "name": "s357-220514-se.jpg"
+                },
+                "e": {
+                    "id": "1WK1Ub4n0Cfq-4VCZUWxr_h75M-jHTvt3",
+                    "originalsize": "5444659",
+                    "name": "s357-220514-e.jpg"
+                },
+                "ne": {
+                    "id": "1178JMTM1A9pcd5E9Y3coJAU96yqh8fYJ",
+                    "originalsize": "5029605",
+                    "name": "s357-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1P44M-lXtwViV_cD1vnVwdNffyC2F6qSf",
+                    "originalsize": "4943065",
+                    "name": "s357-220514-n.jpg"
+                }
+            }
+        }
+    },
+    "389": {
+        "longitude": "-123.5272813",
+        "latitude": "48.82260348",
+        "instances": {
+            "220514": {
+                "canopy": {
+                    "id": "1iYMg4x_EXQT4TiBa-9tkWSVhJxH7lWxu",
+                    "originalsize": "3383405",
+                    "name": "s389-220514-canopy.jpg"
+                },
+                "nw": {
+                    "id": "1WYg97y8R5dkKFhX6UINx1qkIi8tfVBug",
+                    "originalsize": "5259906",
+                    "name": "s389-220514-nw.jpg"
+                },
+                "w": {
+                    "id": "1bolL53jAqVJHYTqIrxUeW3CX4FRzZGZR",
+                    "originalsize": "5138255",
+                    "name": "s389-220514-w.jpg"
+                },
+                "sw": {
+                    "id": "1UyA9cCsDdDks2MOmBxqhJ3zzQXKUAJUR",
+                    "originalsize": "5448134",
+                    "name": "s389-220514-sw.jpg"
+                },
+                "s": {
+                    "id": "1LES3v_qTF5EOmBAYiT2MbfU5JtYBPZID",
+                    "originalsize": "5499190",
+                    "name": "s389-220514-s.jpg"
+                },
+                "se": {
+                    "id": "1uGZ4_9iUYiyiCDPE2_8sNT4Da7P6tn_j",
+                    "originalsize": "5136585",
+                    "name": "s389-220514-se.jpg"
+                },
+                "e": {
+                    "id": "1NOSXbCixvhiEPD0yX62JPdemaaK-7KKK",
+                    "originalsize": "5400190",
+                    "name": "s389-220514-e.jpg"
+                },
+                "ne": {
+                    "id": "1TB0y2tdFwTdKTYvnnpdgg2B-ffGgFcao",
+                    "originalsize": "5536828",
+                    "name": "s389-220514-ne.jpg"
+                },
+                "n": {
+                    "id": "1sKfJ0oxg6Vfve9ekXznTnfnevZG31ehO",
+                    "originalsize": "5811451",
+                    "name": "s389-220514-n.jpg"
+                }
+            }
+        }
+    }
+}
