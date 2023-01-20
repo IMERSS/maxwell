@@ -43,7 +43,7 @@ baseMap
 
 ## Map 3: Study Area of the Maxwell Creek Watershed Project
 
-Maxwell Creek Watershed highlighted in red, with green circle indicating the study area of the Maxwell Creek Watershed Project. Water runs through the watershed from the southeast corner (near Maxwell Provincial Park) to the north-north west. Much of the upper watershed, which supports the water supply to Maxwell Lake, is owned and under the management of the local Improvement District, North Salt Spring Waterworks District, which has been delivering water to the community since 1914. 
+The Maxwell Creek Watershed highlighted in red, with green circle indicating the study area of the Maxwell Creek Watershed Project. Water runs through the watershed from the southeast corner (near Maxwell Provincial Park) to the north-north west. Much of the upper watershed, which supports the water supply to Maxwell Lake, is owned and under the management of the local Improvement District, North Salt Spring Waterworks District, which has been delivering water to the community since 1914. 
 
 ```{r, echo=FALSE, message=FALSE}
 source("scripts/MCW_base_map_script.R")
