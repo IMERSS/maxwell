@@ -37,8 +37,8 @@ baseMap
 Map 2: Salt Spring Island. Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue. The watershed is currently well protected through private and public covenants, protected areas, and parks.
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/NewScript.R")
+WatershedMap
 ```
 
 ## Map 3: Study Area of the Maxwell Creek Watershed Project

@@ -18,3 +18,4 @@ baseMap <- leaflet() %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855)
 
 print(baseMap)
+
