@@ -210,7 +210,7 @@ baseMap
 Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue. Property lines and detail shown in white. Cadastral data layers are essential to this project as they denote land ownership and thus what land-use activities are/are not permitted. 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_landPuse_map_script.R")
+source("scripts/MCW_land_use_map_script.R")
 landUseMap
 ```
 
