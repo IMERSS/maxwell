@@ -1,7 +1,7 @@
 ---
 title: Maxwell Creek Watershed Project
-author: Ruth Waldick, Shauna Doll, Nicholas Courtier, Angeline Emmott, Andrew Simon, Antranig Basman
-date: December 14, 2022
+author: Stephen Akins, Antranig Basman, Nicholas Courtier, Shauna Doll, Angeline Emmott, Grace Fields, Andrew Simon, Ruth Waldick
+date: May 16, 2023
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
