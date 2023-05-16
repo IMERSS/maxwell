@@ -27,7 +27,8 @@ nrow(Roads)
 landUseMap <- leaflet() %>%
     addTiles(options = providerTileOptions(opacity = 0.5)) %>%
     addPolygons(data = islcoast, color = "black", weight = 1.5, fillOpacity = 0, fillColor = NA) %>%
-    addPolygons(data = CAD_MCW, color = "black", weight = 2, fillOpacity = 0) %>%
+    addPolygons(data = CAD_MCW, color = "white", weight = 2, fillOpacity = 0) %>%
+    addProviderTiles('Esri.WorldImagery') %>% 
     addPolylines(data = Trails, color = "green", weight = 4) %>%
     addPolylines(data = Roads, color = "orange", weight = 4) %>%
     fitBounds(-123.564, 48.802, -123.516, 48.855) %>%

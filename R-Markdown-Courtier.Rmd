@@ -28,8 +28,8 @@ Mount Maxwell, also known as Hwmet’utsum to the Hul’q’umi’num speaking p
 Map 1:  Capital Regional District watersheds on Salt Spring Island. Maxwell Creek Watershed is outlined in red. 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map1.R")
+WatershedsMap
 ```
 
 ## Map 2: Maxwell Creek Watershed on Salt Spring Island
@@ -37,8 +37,8 @@ baseMap
 Map 2: Salt Spring Island. Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue. The watershed is currently well protected through private and public covenants, protected areas, and parks.
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/NewScript.R")
-WatershedMap
+source("scripts/Map2.R")
+MXmap
 ```
 
 ## Map 3: Study Area of the Maxwell Creek Watershed Project
@@ -77,8 +77,8 @@ Similar to aerial imagery, but taken at a much wider geographic scale and at a h
 Natural regeneration since 1946, and abandonment has closed much of the canopy in this area. Intrusion into the old farmstead by trees is visible, and a site visit showed that the remaining open area is due to a high water table in the area. The site was formerly a  wet meadow.
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map6.R")
+SatMap
 ```
 
 ## Map 7: Bare Earth LiDAR
@@ -91,8 +91,8 @@ This map shows several depressions where water is able to accumulate, including 
 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map7.R")
+EarthMap
 ```
 
 ## Map 8: LiDAR forest inventory
@@ -161,8 +161,8 @@ Note that map only shows 2 fires
 -->
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-source("scripts/MCW_fire_history_map_script.R")
-FirehistMap
+source("scripts/Map13.R")
+FiresMap
 ```
 
 ## Map 14: Geology
@@ -171,8 +171,8 @@ Base rock layers - or local geological layers - can provide information about so
 **Consideration**s: This map’s resolution is low. 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map14.R")
+GeologyMap
 ```
 
 ## Map 15: Soils
@@ -191,8 +191,8 @@ Contour lines show elevation over sea level. Lines that are close together indic
 **Considerations**: Contour data is readily accessible and useful for identifying features in the landscape. It is also useful in models seeking to map surface water flows or identify catchment areas. 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map16.R")
+ContoursMap
 ```
 
 ## Map 17: LiDAR derived drainage channels
@@ -210,8 +210,8 @@ baseMap
 Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue. Property lines and detail shown in white. Cadastral data layers are essential to this project as they denote land ownership and thus what land-use activities are/are not permitted. 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/MCW_landPuse_map_script.R")
+landUseMap
 ```
 
 ## Map 19: Protected areas. 
