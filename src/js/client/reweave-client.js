@@ -250,6 +250,26 @@ class maxwell_Leaflet extends EventTarget {
     }
 }
 
+/** Apply the map bounds found either in a fitBounds or setView call attached to the supplied widget data
+ * @param {LeafletMap} map - The map to which the view is to be applied
+ * @param {Object} xData - The "data.x" member of the HTMLWidgets Leaflet instantiator
+ */
+maxwell.applyView = function (map, xData) {
+    const bounds = xData.fitBounds;
+    const setView = xData.setView;
+    const limits = xData.limits;
+    if (bounds) {
+        map.fitBounds([[bounds[0], bounds[1]], [bounds[2], bounds[3]]]);
+    } else if (limits) {
+        // TODO: Port this back to current framework
+        map.fitBounds([[limits.lat[0], limits.lng[0]], [limits.lat[1], limits.lng[1]]]);
+    } else if (setView) {
+        map.setView(setView[0], setView[1]);
+    } else {
+        console.error("Unable to find map view information in widget data ", xData);
+    }
+};
+
 maxwell.instantiateLeaflet = function (selector, options) {
     options = options || {};
     options.paneMap = options.paneMap || {};
@@ -259,8 +279,7 @@ maxwell.instantiateLeaflet = function (selector, options) {
     const map = L.map(node);
 
     const data0 = widgets[0].data.x;
-    const bounds = data0.fitBounds;
-    map.fitBounds([[bounds[0], bounds[1]], [bounds[2], bounds[3]]]);
+    maxwell.applyView(map, data0);
 
     const tiles = maxwell.findCall(data0.calls, "addTiles");
     L.tileLayer(tiles.args[0], tiles.args[3]).addTo(map);
