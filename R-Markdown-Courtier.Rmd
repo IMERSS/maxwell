@@ -46,8 +46,8 @@ MXmap
 The Maxwell Creek Watershed highlighted in red, with green circle indicating the study area of the Maxwell Creek Watershed Project. Water runs through the watershed from the southeast corner (near Maxwell Provincial Park) to the north-north west. Much of the upper watershed, which supports the water supply to Maxwell Lake, is owned and under the management of the local Improvement District, North Salt Spring Waterworks District, which has been delivering water to the community since 1914. 
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map3.R")
+ProjectMap
 ```
 
 ## Map 4: Focus Area of the Maxwell Creek Watershed Project
@@ -55,8 +55,8 @@ baseMap
 To provide some examples of the mapping work being done for the Maxwell Creek Watershed Project, thumbnail maps from the area circled have been provided in Maps 5 through 17. The focus of the MCWP is in the area immediately around Maxwell Lake, a large part of which is owned and stewarded by [NSSWD](https://northsaltspringwaterworks.ca/about-us/history/).
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map4.R")
+StudyMap
 ```
 
 ## Map 5: Aerial photos (1946 on)
@@ -181,8 +181,8 @@ The Maxwell Creek watershed is characterised by ridges of erosion-resistant sand
 The CDF Biogeoclimatic Zone ranges in elevation with ecosystems varying according to aspect, soils, and other biophysical conditions. The topography and ecological niches across the Maxwell Creek Watershed are diverse; ranging from just under 300 m elevation, including valleys, wetlands, rocky ridges and ravines. Maxwell Creek ends at the Stuart Channel just north of Erskin Point (an area of suitable Surf smelt forage and spawning habitat).
 
 ```{r, echo=FALSE, message=FALSE}
-source("scripts/MCW_base_map_script.R")
-baseMap
+source("scripts/Map15.R")
+SoilsMap
 ```
 
 ## Map 16: Contours
