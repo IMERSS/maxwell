@@ -1,6 +1,6 @@
 ---
 title: Maxwell Creek Watershed Restoration Project
-author: Angeline Emmott, Andrew Simon, Antranig Basman, Ruth Waldick
+author: Angeline Emmott, Andrew Simon, Antranig Basman, Ruth Waldick, Keegan Thomas
 date: December 1, 2022
 output: html_document
 knit: (function(inputFile, encoding) {
