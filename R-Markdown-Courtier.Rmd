@@ -1,7 +1,7 @@
 ---
 title: Maxwell Creek Watershed Project
-author: Ruth Waldick, Shauna Doll, Nicholas Courtier, Angeline Emmott, Andrew Simon, Antranig Basman
-date: December 14, 2022
+author: Stephen Akins, Antranig Basman, Nicholas Courtier, Shauna Doll, Angeline Emmott, Grace Fields, Andrew Simon, Ruth Waldick
+date: May 16, 2023
 output: html_document
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs") })
@@ -27,7 +27,7 @@ Mount Maxwell, also known as Hwmet’utsum to the Hul’q’umi’num speaking p
 
 Map 1:  Capital Regional District watersheds on Salt Spring Island. Maxwell Creek Watershed is outlined in red. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Map1.R")
 WatershedsMap
 ```
@@ -36,7 +36,7 @@ WatershedsMap
 
 Map 2: Salt Spring Island. Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue. The watershed is currently well protected through private and public covenants, protected areas, and parks.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Map2.R")
 MXmap
 ```
@@ -65,7 +65,7 @@ Aerial imagery provides a historic record of land-use change over time. These im
 
 Considerations: Aerial photos may be obtained at a cost ([Digital Air Photos of B.C. - Province of British Columbia](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/digital-imagery/air-photos). Images are not georeferenced, and technical skills are required to process and interpret images. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -76,7 +76,7 @@ Similar to aerial imagery, but taken at a much wider geographic scale and at a h
 
 Natural regeneration since 1946, and abandonment has closed much of the canopy in this area. Intrusion into the old farmstead by trees is visible, and a site visit showed that the remaining open area is due to a high water table in the area. The site was formerly a  wet meadow.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Map6.R")
 SatMap
 ```
@@ -90,7 +90,7 @@ This map shows several depressions where water is able to accumulate, including 
 **Considerations**: Bare earth information is incredibly useful for highlighting linear features and exposing hidden features. For example, linear features in the former farm  fields run perpendicular to the movement of water, serving as drainage and irrigation infrastructure. Although the farm has not operated in over 20 years, the drainage system remains, meaning without its removal the wet meadow will be unable to recover.
 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Map7.R")
 EarthMap
 ```
@@ -103,7 +103,7 @@ As the MCWP is focused on fire, and preventing the movement of fire into the can
 
 **Considerations**: LiDAR interpretation requires advanced GIS technical abilities. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -117,7 +117,7 @@ In this case, the tallest trees are shown in green, and the shortest canopy (tra
 
 The green area of tall trees indicates areas of good growing conditions, and provides information about potential water availability across the landscape.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -125,7 +125,7 @@ baseMap
 ## Map 10: Recent logging (since 2000)
 Satellite data can be used over time to map out areas of harvest. Organizations like Global Forest Watch produce annual maps showing the area of forest lost (since 2020). This type of information allows tree age and regeneration to be evaluated from a ‘zero’ or baseline year. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -135,7 +135,7 @@ Official planting and harvesting maps are sometimes available. In this case  det
 
 **Considerations**: These maps can be hard to track down and are often not available in digital format. They provide additional information about trees harvested and historic forest attributes. However, expertise is required to interpret this information.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -146,7 +146,7 @@ The [British Columbia VRI](https://www2.gov.bc.ca/gov/content/industry/forestry/
 
 **Considerations**: Although a generalized representation of forest characteristics, and forestry-derived, VRI units provide useful information about forest stands and are comparable to [Terrestrial Ecosystem Mapping (TEM) or Sensitive Ecosystem Inventory (SEI)](https://islandstrust.bc.ca/document/sem-tem-mapping-updates-and-disturbance-mapping/) polygons.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -170,7 +170,7 @@ Base rock layers - or local geological layers - can provide information about so
 
 **Consideration**s: This map’s resolution is low. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Map14.R")
 GeologyMap
 ```
@@ -190,7 +190,7 @@ Contour lines show elevation over sea level. Lines that are close together indic
 
 **Considerations**: Contour data is readily accessible and useful for identifying features in the landscape. It is also useful in models seeking to map surface water flows or identify catchment areas. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Map16.R")
 ContoursMap
 ```
@@ -200,7 +200,7 @@ Bare Earth information is used in surface-water modelling to understand how wate
 
 The Maxwell farmstead (top left) shows how water has been rerouted using linear features within the fields, and using a trench running east-west immediately south of the farm. These features accelerate water flows and exacerbate flash flooding and erosion. In fact, the trench intercepts and redirects the waters from the upper watershed away from the fields, toward the Maxwell Road - which is experiencing significant erosion and contributing to sediment and nutrient loading into the creek supplying Maxwell lake. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_base_map_script.R")
 baseMap
 ```
@@ -209,7 +209,7 @@ baseMap
 
 Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue. Property lines and detail shown in white. Cadastral data layers are essential to this project as they denote land ownership and thus what land-use activities are/are not permitted. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_land_use_map_script.R")
 landUseMap
 ```
@@ -218,7 +218,7 @@ landUseMap
 Maxwell Creek Watershed is outlined in red and Maxwell Lake is highlighted in blue.
 Parks (light green), EcoReserves (yellow), Watershed protection (hatched), covenants (pink). are shown.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/Jurisdictional_reference_map_script.R")
 jurisMap
 ```
@@ -226,14 +226,14 @@ jurisMap
 ## Map 20: Zoning
 This information is important to help us delineate the areas we include in the study, and to connect with landowners to let them know about the project. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 jurisMap
 ```
 
 ## Map 21: Development permit areas
 These are areas designated as requiring permissions and limiting the types of activities that may be undertaken. Lake Maxwell is within a DPA for Lakes, Streams and Wetlands (Island Trust). 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 jurisMap
 ```
 
@@ -252,7 +252,7 @@ WatershedMap
 
 A hill shaded LIDAR digital elevation model shows the bare earth surface and reveals, along with the geological features, human disturbance such as old roadbeds (R) which are now often trails or easy access routes, ditching and berms (B), agricultural drainage (A), and other items of interest which cannot be seen in the aerial photography.
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 baseMap
 ```
 
@@ -277,7 +277,7 @@ In 2022/23 we are establishing an additional 10+ plots in which we will apply tr
 2. Eight point horizontal panorama.  The iOS Theodolite app can embed site id and camera metadata in the photo image as well as making a clear copy. 
 3. Eight point ground photography from centroid or circumference as applicable. 
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("scripts/MCW_Study_site_map_script.R")
 StudySiteMap
 ```
