@@ -24,7 +24,7 @@ taxaHash <- split(x = veg$species_name, f = veg$siteID)
 
 vascularData <- list(taxa = taxaHash, mapTitle = "Map 1. Vegetation plots")
 
-# Write summarised plants to JSON file for viz
+# Write summarized plants to JSON file for viz
 
 write(jsonlite::toJSON(vascularData, auto_unbox = TRUE, pretty = TRUE), "viz_data/Vascular-plotData.json")
 
