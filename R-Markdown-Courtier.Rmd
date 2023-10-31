@@ -264,12 +264,17 @@ Monitoring includes: vascular plant/shrubs (cover, type, height), woody material
 These plots were selected using a randomized algorithm to capture four conditions within the upper watershed using map data: open canopy sites with wet and dry characteristics and closed canopy sites with wet and dry characteristics. Our initial monitoring of these sites in 2022 has allowed us to characterize these sites to validate the remote-assignments into these four categories, and is being analyzed to capture the range of conditions and characteristics occurring in the watershed. 
 In 2022/23 we are establishing an additional 10+ plots in which we will apply treatments to examine how the understorey, tree growth and recruitment, and other conditions observed in the forest are influenced by canopy closure/light (high canopy closure vs opening of canopy in treatment sites), browse/herbivory (lack of recruitment of younger age classes, through fencing treatments), seedbank and moisture effects (soil moisture and seed treatments). Pairwise treatments and use of references sites at treated stands will be contrasted with observations from the array of long-term monitoring plots. 
 
-### PLOT SURVEY TYPES
+### Baseline vegetation
 
-1. Vegetation survey
-2. Coarse woody material, fine woody material, shrub cover, and DBH
-3. Prism plot
-4. Ground moisture measurements
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("scripts/MCW_Vegetation_plots_map_script.R")
+VegMap
+```
+
+### Other surveys
+1. Coarse woody material, fine woody material, shrub cover, and DBH
+2. Prism plot
+3. Ground moisture measurements
 
 ### PLOT PHOTOGRAPHY
 
