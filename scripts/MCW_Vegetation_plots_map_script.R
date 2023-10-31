@@ -11,10 +11,16 @@ islcoast <- mx_read("spatial_data/vectors/Shp_files/Island")
 #Layer 2: MCW
 MCW <- mx_read("spatial_data/vectors/Shp_files/MCW")
 
-#Layer #3: Observational Study sites
+#Layer 3: Observational Study sites
 study_sites <- mx_read("spatial_data/vectors/Shp_files/Observational_Study")
 
 study_sites$label <- substring(study_sites$siteID, 6)
+
+#Veg data:
+
+veg <- read.csv("tabular_data/MXCW_vegetation_percent_cover_data.csv")
+
+head(veg)
 
 VegMap <- leaflet(study_sites) %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
