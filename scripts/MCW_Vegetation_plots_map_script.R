@@ -20,7 +20,15 @@ study_sites$label <- substring(study_sites$siteID, 6)
 
 veg <- read.csv("tabular_data/MXCW_vegetation_percent_cover_data.csv")
 
-head(veg)
+taxaHash <- split(x = veg$species_name, f = veg$siteID)
+
+vascularData <- list(taxa = taxaHash, mapTitle = "Map 1. Vegetation plots")
+
+# Write summarised plants to JSON file for viz
+
+write(jsonlite::toJSON(vascularData, auto_unbox = TRUE, pretty = TRUE), "viz_data/Vascular-plotData.json")
+
+# Generate map
 
 VegMap <- leaflet(study_sites) %>%
   addTiles(options = providerTileOptions(opacity = 0.5)) %>%
