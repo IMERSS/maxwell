@@ -1,0 +1,2 @@
+MXCW_vegetation_percent_cover_data.csv taken from
+https://docs.google.com/spreadsheets/d/1jU8tGsGMJyEKzyXhGAs9RSze7glURlYByGVcd58dAas/edit#gid=1355675516

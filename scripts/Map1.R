@@ -55,7 +55,7 @@ watershed_walkerbrook = subset(watersheds, watersheds$Name == "Walker Brook")
 watershed_westoncreek = subset(watersheds, watersheds$Name == "Weston Creek")
 watershed_xwaaqwum = subset(watersheds, watersheds$Name == "Xwaaqw'um")
  
-# Hillshade pallette #
+# Hillshade palette #
 
 pal <- colorNumeric(c("#0C2C84", "#41B6C4", "#FFFFCC"), values(hillshade),
                     na.color = "transparent")
@@ -98,5 +98,7 @@ WatershedsMap <- leaflet() %>%
   addPolygons(data = watershed_xwaaqwum, weight = 0, fillOpacity = 0.3, fillColor = "#CC33CC") %>%
   addPolylines(data = watersheds, color = "black", weight = 0.5) %>%
   addPolylines(data = MCW, color = "#FF0000", weight = 2, fillColor = NA) %>%
+  fitBounds(-123.564, 48.802, -123.516, 48.855)
+
 print(WatershedsMap)
 

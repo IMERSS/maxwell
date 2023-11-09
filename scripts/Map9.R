@@ -21,7 +21,7 @@ MCW <- mx_read("spatial_data/vectors/Shp_files/MCW")
 # Pal #
 
 # pal <- colorNumeric(c("#0C2C84", "#41B6C4", "#FFFFCC"), values(chm),
-                    na.color = "transparent")
+#                    na.color = "transparent")
 
 # Map #
 

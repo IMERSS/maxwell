@@ -1,0 +1,99 @@
+{
+    reknitJobs: [{
+        infile: "%maxwell/docs/R-Markdown-Background.html",
+        outfile: "%maxwell/docs/R-Markdown-Background-Rewoven.html",
+        options: {
+            template: "%maxwell/src/html/template.html",
+            paneHandlers: {
+            }
+        }
+    }, {
+        infile: "%maxwell/docs/R-Markdown-Courtier.html",
+        outfile: "%maxwell/docs/R-Markdown-Courtier-Rewoven.html",
+        options: {
+            template: "%maxwell/src/html/template-Courtier.html",
+            paneHandlers: {
+                Vascular: {
+                    type: "maxwell.scrollyPaneHandler",
+                    gradeNames: ["maxwell.withPaneInfo", "maxwell.scrollyVizBinder", "maxwell.vegPlots.siteSelection", "maxwell.paneHandler.withMarkers"],
+                    paneInfoGrades: ["maxwell.regionPaneInfo"],
+                    regionInfoText: "Selected plot: %region",
+                    vizFile: "%resourceBase/data/MXCW-Scrolly-Vascular.json.lz4"
+                },
+                StudySites: {
+                    type: "maxwell.sites.paneHandler"
+                }
+            }
+        }
+    }],
+    copyJobs: [{
+        source: "%infusion/dist/infusion-framework.js",
+        target: "%maxwell/docs/js/infusion-framework.js",
+        replaceSource: "sourceMappingURL=infusion-framework.js.map",
+        replaceTarget: "sourceMappingURL=../../node_modules/infusion/dist/infusion-framework.js.map"
+    }, {
+        source: "%maxwell/src/css/*.css",
+        target: "%maxwell/docs/css"
+    }, {
+        source: "%maxwell/src/js/client/reknit-client.js",
+        target: "%maxwell/docs/js/reknit-client.js"
+    }, {
+        source: "%maxwell/src/js/client/imerss-viz-reknit.js",
+        target: "%maxwell/docs/js/imerss-viz-reknit.js"
+    }, {
+        source: "%maxwell/src/js/client/paneHandlers.js",
+        target: "%maxwell/docs/js/paneHandlers.js"
+    }, {
+        source: "%imerss-bioinfo/docs/js/imerss-viz-all.js",
+        target: "%maxwell/docs/js/imerss-viz-all.js"
+    }, {
+        source: "%imerss-bioinfo/docs/js/imerss-viz-all.js.map",
+        target: "%maxwell/docs/js/imerss-viz-all.js.map",
+        replaceSource: "\"sourceRoot\":\"../..\"",
+        replaceTarget: "\"sourceRoot\":\"../../../bagatelle/\""
+    }, {
+        source: "%imerss-bioinfo/src/client/img/Arrow-up.svg",
+        target: "%maxwell/docs/img/Arrow-up.svg"
+    }, {
+        source: "%imerss-bioinfo/src/client/img/Arrow-down.svg",
+        target: "%maxwell/docs/img/Arrow-down.svg"
+    }, {
+        source: "%imerss-bioinfo/src/client/img/up-arrow.svg",
+        target: "%maxwell/docs/img/up-arrow.svg"
+    }, {
+        source: "%imerss-bioinfo/src/client/img/external-link.svg",
+        target: "%maxwell/docs/img/external-link.svg"
+    }, {
+        source: "%imerss-bioinfo/docs/css/imerss-viz-all.css",
+        target: "%maxwell/docs/css/imerss-viz-all.css"
+    }, {
+        source: "%maxwell/src/html/imerss-viz-scrolly.html",
+        target: "%maxwell/docs/html/imerss-viz-scrolly.html"
+    }, {
+        source: "%maxwell/src/html/pane-info.html",
+        target: "%maxwell/docs/html/pane-info.html"
+    }, {
+        source: "%imerss-bioinfo/src/client/json/emptyPhyloMap.json",
+        target: "%maxwell/docs/json/phyloMap.json"
+    }, {
+        source: "%maxwell/viz_data/MXCW-Scrolly-Vascular.json.lz4",
+        target: "%maxwell/docs/data/MXCW-Scrolly-Vascular.json.lz4"
+    }, {
+        source: "%maxwell/src/js/client/site.js",
+        target: "%maxwell/docs/js/site.js"
+    }, {
+        source: "%maxwell/src/js/client/maxwell.js",
+        target: "%maxwell/docs/js/maxwell.js"
+    }, {
+        source: "%maxwell/data/json/sitedata.json",
+        target: "%maxwell/docs/data/json/sitedata.json"
+    }, {
+        source: "%maxwell/data/json/sitedata.json",
+        target: "%maxwell/docs/json/sitedata.json"
+    }, {
+        source: "%maxwell/src/html/site.html",
+        target: "%maxwell/docs/html/site.html"
+    }]
+}
+
+

@@ -305,7 +305,7 @@ maxwell.siteSelectable = class {
     constructor() {
         const that = this;
         that.emitter = new maxwell.EventEmitter();
-        const sitedata_p = fetch("./json/sitedata.json").then((response) => response.json()).then(sitedata => that.sitedata = sitedata);
+        const sitedata_p = fetch("https://maxwell.mockupserver.com/sitedata.json").then((response) => response.json()).then(sitedata => that.sitedata = sitedata);
         const site_p = fetch("./html/site.html").then(response => response.text()).then(text => that.sitemarkup = text);
         that.ready = Promise.all([sitedata_p, site_p]);
         that.ready.then(function () {

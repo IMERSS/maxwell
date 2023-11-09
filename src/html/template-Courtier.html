@@ -3,13 +3,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/maxwell.css" />
 
-    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
-    <script src="js/reweave-client.js"></script>
-    
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+	<link rel="stylesheet" href="css/imerss-viz-all.css" />
+	<link rel="stylesheet" href="css/imerss-scrolly.css" />
+	<link rel="stylesheet" href="css/imerss-viz-scrolly.css" />
+	<link rel="stylesheet" href="css/maxwell.css" />
+
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet-src.js"></script>
+	<script src="js/infusion-framework.js"></script>
+	<script src="js/imerss-viz-all.js"></script>
+
+	<script src="js/reknit-client.js"></script>
+	<script src="js/imerss-viz-reknit.js"></script>
+	<script src="js/paneHandlers.js"></script>
+	<script src="js/site.js"></script>
+	<script src="js/maxwell.js"></script>
+
     <title>Maxwell Creek Watershed Project</title>
 </head>
 <body>
@@ -21,14 +31,13 @@
 		    <div class="mxcw-map">
 		    </div>
 		    <div class="mxcw-data">
-		    DATA
 		    </div>
 		</div>
 		<div class="mxcw-content">
 		</div>
     </div>
-    <script>
-    maxwell.instantiateLeaflet(".mxcw-map");
-    </script>
+	<script>
+		maxwell.scrollyPage();
+	</script>
 </body>
 </html>

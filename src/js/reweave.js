@@ -88,11 +88,11 @@ const deps = [{
     source: "%maxwell/src/js/client/reweave-client.js",
     target: "%maxwell/docs/js/reweave-client.js"
 }, {
-    source: "%maxwell/src/js/client/site.js",
-    target: "%maxwell/docs/js/site.js"
-}, {
     source: "%maxwell/src/css/maxwell.css",
     target: "%maxwell/docs/css/maxwell.css"
+}, {
+    source: "%maxwell/src/js/client/site.js",
+    target: "%maxwell/docs/js/site.js"
 }, {
     source: "%maxwell/data/json/sitedata.json",
     target: "%maxwell/docs/data/json/sitedata.json"
