@@ -15,8 +15,7 @@
             paneHandlers: {
                 Vascular: {
                     type: "maxwell.scrollyPaneHandler",
-                    gradeNames: ["maxwell.withPaneInfo", "maxwell.scrollyVizBinder", "maxwell.vegPlots.siteSelection", "maxwell.paneHandler.withMarkers"],
-                    paneInfoGrades: ["maxwell.regionPaneInfo"],
+                    gradeNames: ["maxwell.withRegionPaneInfo", "maxwell.scrollyVizBinder", "maxwell.vegPlots.siteSelection", "maxwell.paneHandler.withMarkers"],
                     regionInfoText: "Selected plot: %region",
                     vizFile: "%resourceBase/data/MXCW-Scrolly-Vascular.json.lz4"
                 },

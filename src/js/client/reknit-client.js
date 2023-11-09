@@ -995,6 +995,8 @@ maxwell.applyZerothTiles = function (leafletWidgets, map) {
 // TODO: Shouldn't everything connected with viz code go into imerss-viz-reknit.js?
 // Pane info widgets which appear immediately below map
 
+
+
 fluid.defaults("maxwell.paneInfo", {
     gradeNames:  "fluid.templateRenderingView",
     parentContainer: "{paneHandler}.options.parentContainer",
@@ -1004,6 +1006,20 @@ fluid.defaults("maxwell.paneInfo", {
         }
     },
     injectionType: "prepend" // So it appears earlier than the viz markup, which uses "append"
+});
+
+
+// Used in Howe with "distribution" model, not currently used in bioblitz since it has more concrete grades bioblitz.js side
+fluid.defaults("maxwell.withPaneInfo", {
+    // paneInfoGrades: []
+    components: {
+        paneInfo: {
+            type: "maxwell.paneInfo",
+            options: {
+                gradeNames: "{withPaneInfo}.options.paneInfoGrades"
+            }
+        }
+    }
 });
 
 fluid.defaults("maxwell.paneInfoBinder", {
@@ -1031,9 +1047,10 @@ maxwell.renderRegionName = function (target, template, region) {
     target.text(text);
 };
 
-
-// Used in Howe with "distribution" model, not currently used in bioblitz since it has more concrete grades bioblitz.js side
-fluid.defaults("maxwell.withPaneInfo", {
+fluid.defaults("maxwell.withRegionPaneInfo", {
+    gradeNames: "maxwell.withPaneInfo",
+    // regionBinderGrades
+    // regionInfoText
     distributeOptions: {
         regionBinderGrades: {
             source: "{that}.options.regionBinderGrades",
@@ -1045,14 +1062,10 @@ fluid.defaults("maxwell.withPaneInfo", {
             target: "{that > paneInfo > regionBinder}.options.markup.infoText"
         }
     },
-    // paneInfoGrades: []
-    // regionBinderGrades
-    // regionInfoText
     components: {
         paneInfo: {
-            type: "maxwell.paneInfo",
+            type: "maxwell.regionPaneInfo",
             options: {
-                gradeNames: "{withPaneInfo}.options.paneInfoGrades",
                 // TODO: Necessary because of broken distribution
                 components: {
                     regionBinder: {
@@ -1065,10 +1078,10 @@ fluid.defaults("maxwell.withPaneInfo", {
                 }
             }
         }
-    },
+    }
 });
 
-// Mix in to a paneInfoBinder which is already a regionBinder
+// Mix in to a paneInfoBinder which is already a regionBinder for more refined region name including label
 fluid.defaults("maxwell.withLabelledRegionName", {
     markup: {
         infoText: "Selected biogeoclimatic region: <span class=\"fl-imerss-region-key\">%region</span> %regionLabel"
@@ -1118,7 +1131,7 @@ fluid.defaults("maxwell.labelledRegionPaneInfo", {
     }
 });
 
-/** This one gets used in bioblitz */
+/** This one gets used in Marine Atlas as well as Status in Howe Sound */
 fluid.defaults("maxwell.statusCellPaneInfo", {
     gradeNames: ["maxwell.paneInfo", "maxwell.withMapTitle", "maxwell.withDownloadLink"],
     components: {
