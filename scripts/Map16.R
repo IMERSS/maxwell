@@ -28,7 +28,7 @@ contours <- raster("spatial_data/rasters/14mcontours.tif")
 # Hillshade pallette #
 
 pal <- colorNumeric(c("transparent", "purple", "purple"), values(contours),
-                    na.color = "transparent")
+                   na.color = "transparent")
 
 # Render map #
 

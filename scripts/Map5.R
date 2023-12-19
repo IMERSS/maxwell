@@ -34,12 +34,12 @@ crs(aerial)
 # MCW_new <- st_transform(MCW, new_crs)
 
 crs(aerial)<- CRS('+proj=longlat +datum=WGS84 +no_defs')
-crs(MCW) <- CRS('+proj=longlat +datum=WGS84 +no_defs')
-crs(islcoast) <- CRS('+proj=longlat +datum=WGS84 +no_defs')
+#crs(MCW) <- CRS('+proj=longlat +datum=WGS84 +no_defs')
+#crs(islcoast) <- CRS('+proj=longlat +datum=WGS84 +no_defs')
 
-crs(islcoast)
-crs(MCW)
-crs(aerial)
+#crs(islcoast)
+#crs(MCW)
+#crs(aerial)
 
 # Map #
 

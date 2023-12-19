@@ -23,7 +23,7 @@ MXmap <- leaflet() %>%
   fitBounds(-123.564, 48.802, -123.516, 48.855) %>%
   addProviderTiles('Esri.WorldImagery') %>% 
   addPolygons(data = islcoast, color = "black", weight = 1.5, fillOpacity = 0) %>%
-  addPolygons(data = waterbodies, weight = 1.5, fillOpacity = 0.8, fillColor = "lightblue") %>%
+  #addPolygons(data = waterbodies, weight = 1.5, fillOpacity = 0.8, fillColor = "lightblue") %>%
   addPolylines(data = MCW, color = "#FF0000", weight = 2, fillColor = NA)
 print(MXmap)
 
